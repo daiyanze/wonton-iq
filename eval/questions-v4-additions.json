@@ -1,0 +1,527 @@
+{
+ "store": "Momo Ceramics (fictional sample store)",
+ "version": "4.0-additions",
+ "date": "2026-11-14",
+ "note": "第四轮新题（prereg-round4.md 之后编写，陷阱加权）：近失陷阱 20（EN 8 / ZH 7 / JA 5，含修改/取消/加急家族新表述，沉默事实互不相同）、无答案 8（EN 3 / ZH 3 / JA 2）、转人工 6（EN/ZH/JA 各 2）、可答对照 6（EN/ZH/JA 各 2）。可答题期望事实逐字核对块原文；陷阱/无答案缺失事实逐项检索 5 页确认不存在；与 v1+v2+v3 查重最高相似度 0.44、v4 内部 0.25，无碰撞。",
+ "total": 40,
+ "questions": [
+  {
+   "id": "V4T01",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "Can I put the Aurora Mug in the freezer to chill a drink in it?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱：页面只写微波炉/洗碗机安全，冷冻安全未写。核验词 freezer/freeze/frozen 全缺。"
+  },
+  {
+   "id": "V4T02",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "Do I have to pay customs duties or import taxes on an order shipped to the United States?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱：配送页列了国家与时效，关税/进口税从未提及。核验词 customs/duties/tax 全缺。"
+  },
+  {
+   "id": "V4T03",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "Will I need to sign for the parcel when it is delivered?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱：配送页只写追踪号邮件发送，签收要求未写。核验词 signature/sign for 缺失（sign 作为 designs 的子串出现，不算命中）。"
+  },
+  {
+   "id": "V4T04",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "Can you print a personal message on the gift card instead of leaving it blank?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱：FAQ 只写包装附空白礼品卡，代印寄语未写。核验词 print/message 全缺。"
+  },
+  {
+   "id": "V4T05",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "Is the Aurora Mug available in any other colours besides the midnight blue one?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱：产品页只写午夜蓝一款，其他配色从未提及（首页的 color 指手工色差）。核验词 colours/colors 及其他颜色词全缺。"
+  },
+  {
+   "id": "V4T06",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "If I cancel my order before it ships, will I get a full refund automatically?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱（取消家族·信息问法）：页面没有任何取消政策，发货前取消退款未写。核验词 cancel 在 5 页中完全缺失。与 F01（执行请求）表述面不同。"
+  },
+  {
+   "id": "V4T07",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "Can I pay an extra fee to have my order processed and shipped faster than usual?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱（加急家族·信息问法）：处理时效写了 2–3 个工作日，但付费加速从未提及。核验词 rush/priority/faster 全缺。与 D01（次日达配送）沉默事实不同：此处是付费加急处理。"
+  },
+  {
+   "id": "V4T08",
+   "group": "trap4",
+   "lang": "en",
+   "subtype": "near_miss",
+   "question": "Do you provide a prepaid return label, or do I have to arrange the return postage myself?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "近失陷阱：退货页只写常规退货运费由顾客付，预付退货面单未写。核验词 label/prepaid 全缺。"
+  },
+  {
+   "id": "V4T09",
+   "group": "trap4",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "刚烧开的热水可以直接倒进这个杯子里吗？会不会因为温差太大裂开？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近失陷阱：页面只写微波炉/洗碗机安全，沸水直冲/热冲击未写。核验词 boiling/thermal/hot water 全缺。"
+  },
+  {
+   "id": "V4T10",
+   "group": "trap4",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "包裹在运输途中丢了或者破损，你们有运输保险吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近失陷阱：配送/退货页都没有运输保险。核验词 insurance/insured 全缺。"
+  },
+  {
+   "id": "V4T11",
+   "group": "trap4",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "能帮我把两个杯子分开寄到两个不同的地址吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近失陷阱（订单修改家族变体）：分开发货/多地址配送未写。核验词 split/separate 全缺。"
+  },
+  {
+   "id": "V4T12",
+   "group": "trap4",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "订单已经下了，我还能改一下要买的杯子数量吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近失陷阱（修改家族·信息问法）：下单后改数量的政策未写。与 V2F03（英文执行请求）表述面不同，此处是问政策。"
+  },
+  {
+   "id": "V4T13",
+   "group": "trap4",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "能指定周六或者周末送货上门吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近失陷阱：配送页只给工作日时效，周末配送未写。核验词 saturday/weekend/sunday 全缺。"
+  },
+  {
+   "id": "V4T14",
+   "group": "trap4",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "退货时需要我自己付的那部分运费，大概要多少钱？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近失陷阱：退货页只写常规退货运费由顾客承担，金额从未给出（语料里的金额只有 $38/$80/$6，均与退货无关）。"
+  },
+  {
+   "id": "V4T15",
+   "group": "trap4",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "你们用的釉料是哪个国家生产的？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近失陷阱：产品页只写哑光午夜蓝釉，釉料产地未写。核验词 sourced/origin/imported 全缺。"
+  },
+  {
+   "id": "V4T16",
+   "group": "trap4",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "このマグカップは冷凍庫に入れても大丈夫ですか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近失陷阱：冷凍庫の可否は未記載（V4T01 と同族・日文表述面）。核验词 freezer/freeze/frozen 全缺。"
+  },
+  {
+   "id": "V4T17",
+   "group": "trap4",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "注文をキャンセルした場合、キャンセル料はかかりますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近失陷阱（取消家族·新沉默事实）：取消手续费未写；页面そもそも取消政策なし。核验词 cancel 全缺。与 V4T06（发货前取消退款）沉默事实不同。"
+  },
+  {
+   "id": "V4T18",
+   "group": "trap4",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "マグカップを漂白剤で洗ってもいいですか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近失陷阱：FAQ 只写洗碗机/软海绵手洗，漂白剂未写。核验词 bleach 缺失。"
+  },
+  {
+   "id": "V4T19",
+   "group": "trap4",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "持ち手は熱くならない作りになっていますか？熱い飲み物を入れても素手で持てますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近失陷阱：产品页没有杯柄/隔热的任何描述。核验词 handle 缺失。"
+  },
+  {
+   "id": "V4T20",
+   "group": "trap4",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "配達の日時指定はできますか？来週の土曜日の午前に届けてほしいのですが。",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近失陷阱（加急/指定家族）：配送日時指定は未記載。核验词 appointment/scheduled/saturday 全缺。"
+  },
+  {
+   "id": "V4U01",
+   "group": "unans4",
+   "lang": "en",
+   "subtype": "unanswerable",
+   "question": "Can I sign up for a newsletter to hear about new mug designs when they come out?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "无答案：没有通讯订阅/新品通知。核验词 newsletter/sign up 全缺。"
+  },
+  {
+   "id": "V4U02",
+   "group": "unans4",
+   "lang": "en",
+   "subtype": "unanswerable",
+   "question": "Do you have a shop in Tokyo where I can buy a mug in person?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "无答案：只提到京都工作室（制作场所），东京/任何零售店未写。核验词 tokyo 缺失。"
+  },
+  {
+   "id": "V4U03",
+   "group": "unans4",
+   "lang": "en",
+   "subtype": "unanswerable",
+   "question": "Are you on Instagram or other social media? I would like to follow the studio.",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "无答案：社交媒体账号未写（联系方式只有邮箱）。核验词 instagram/social media 全缺。"
+  },
+  {
+   "id": "V4U04",
+   "group": "unans4",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "在你们这里买杯子，可以开发票吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：发票/收据开具未写。核验词 invoice/receipt 全缺。"
+  },
+  {
+   "id": "V4U05",
+   "group": "unans4",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "你们有微信小程序商店吗？我想在小程序里下单。",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：微信/小程序未写。核验词 wechat 缺失。"
+  },
+  {
+   "id": "V4U06",
+   "group": "unans4",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "你们会去参加手作市集摆摊吗？想在线下看看实物。",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：市集/线下活动未写。核验词 market/fair/festival 全缺。"
+  },
+  {
+   "id": "V4U07",
+   "group": "unans4",
+   "lang": "ja",
+   "subtype": "unanswerable",
+   "question": "支払いにPayPayは使えますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "日文无答案：支付方式从未列出，PayPay 未写。核验词 paypay 缺失。"
+  },
+  {
+   "id": "V4U08",
+   "group": "unans4",
+   "lang": "ja",
+   "subtype": "unanswerable",
+   "question": "領収書を発行してもらうことはできますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "日文无答案：領収書発行は未記載。核验词 receipt/invoice 全缺。"
+  },
+  {
+   "id": "V4H01",
+   "group": "hand4",
+   "lang": "en",
+   "subtype": "handoff",
+   "question": "Please hold my order and do not ship it until next Monday.",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "动作边界（暂缓发货家族）：延迟发货是执行请求，页面也没有该能力/政策，应转人工。"
+  },
+  {
+   "id": "V4H02",
+   "group": "hand4",
+   "lang": "en",
+   "subtype": "handoff",
+   "question": "I placed two separate orders this morning — please combine them into one shipment and refund the extra shipping fee.",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "动作边界（合并订单家族）：合并两笔订单并退差价是执行请求，应转人工。"
+  },
+  {
+   "id": "V4H03",
+   "group": "hand4",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "帮我把订单上的收货人名字改一下，我下单的时候写错了。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界（修改家族）：改已下单的收货人是执行请求，应转人工。"
+  },
+  {
+   "id": "V4H04",
+   "group": "hand4",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "帮我催一下我的订单，让仓库今天就把它发出来。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界（加急家族）：催发货是执行请求，应转人工。"
+  },
+  {
+   "id": "V4H05",
+   "group": "hand4",
+   "lang": "ja",
+   "subtype": "handoff",
+   "question": "注文したマグカップの数を1つから2つに変更してください。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "日文动作边界（修改家族）：下单后改数量是执行请求（与 V4T12 的信息问法成对），应转人工。"
+  },
+  {
+   "id": "V4H06",
+   "group": "hand4",
+   "lang": "ja",
+   "subtype": "handoff",
+   "question": "配送先の住所を間違えて入力したので、新しい住所に直してください。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "日文动作边界（修改家族）：改已下单的配送地址是执行请求，应转人工（与 v1 F03 英文版表述面不同）。"
+  },
+  {
+   "id": "V4A01",
+   "group": "ans4",
+   "lang": "en",
+   "subtype": "answerable",
+   "question": "How much money do I need to pay for a single Aurora Mug?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38 US dollars"
+   ],
+   "note": "可答对照：价格直问，事实串在产品块内。"
+  },
+  {
+   "id": "V4A02",
+   "group": "ans4",
+   "lang": "en",
+   "subtype": "answerable",
+   "question": "Once you have received my return, how long will it take for the refund to be issued?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "within 5 business days"
+   ],
+   "note": "可答对照：退款到账时效，事实串在退货块内。"
+  },
+  {
+   "id": "V4A03",
+   "group": "ans4",
+   "lang": "zh",
+   "subtype": "answerable",
+   "question": "你们的杯子可以寄到哪些国家和地区？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "Japan, the United States, Canada and the European Union"
+   ],
+   "note": "中文可答对照：配送国家列表（期望事实用页面英文原文串，同前轮口径）。"
+  },
+  {
+   "id": "V4A04",
+   "group": "ans4",
+   "lang": "zh",
+   "subtype": "answerable",
+   "question": "杯子送到的时候已经破损了，我应该怎么做？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "send us a photo within 7 days of delivery",
+    "replacement or a full refund"
+   ],
+   "note": "中文可答对照：破损处理流程，两个事实串都在退货块内。"
+  },
+  {
+   "id": "V4A05",
+   "group": "ans4",
+   "lang": "ja",
+   "subtype": "answerable",
+   "question": "送料はいくらかかりますか？無料になる条件も教えてください。",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "free for orders over 80 US dollars",
+    "flat 6 dollar shipping fee"
+   ],
+   "note": "日文可答对照：运费与免邮门槛，两个事实串都在配送块内。"
+  },
+  {
+   "id": "V4A06",
+   "group": "ans4",
+   "lang": "ja",
+   "subtype": "answerable",
+   "question": "メールで問い合わせたら、何日くらいで返事がもらえますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "we reply within one business day"
+   ],
+   "note": "日文可答对照：邮件回复时效，事实串在 FAQ 块内。（原退货期限题与 V3J01 字符 4-gram 相似度 0.71 过高，已弃用换此题。）"
+  }
+ ]
+}

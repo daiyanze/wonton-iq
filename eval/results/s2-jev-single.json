@@ -1,0 +1,3309 @@
+[
+ {
+  "id": "A01",
+  "group": "direct",
+  "lang": "en",
+  "question": "What is your return policy?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "30 days",
+   "full refund",
+   "unused",
+   "original packaging"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -4.415,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [
+   "30 days",
+   "full refund",
+   "unused",
+   "original packaging"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "latency_ms": 617.4,
+  "service_s": 0.617,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "4": 0.98,
+    "1": 0.33,
+    "5": 0.98,
+    "2": 0.11,
+    "0": 0.08,
+    "6": 0.14,
+    "8": 0.09
+   },
+   "selected": [
+    "4",
+    "5"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1666,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "4",
+      "5"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A02",
+  "group": "direct",
+  "lang": "en",
+  "question": "How long does delivery take within Japan?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "2 to 4 business days",
+   "japan"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -5.481,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "2 to 4 business days",
+   "japan"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 848.2,
+  "service_s": 0.848,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 9,
+   "probs": {
+    "2": 0.98,
+    "9": 0.03,
+    "4": 0.06,
+    "8": 0.04,
+    "1": 0.24,
+    "5": 0.04,
+    "3": 0.06,
+    "0": 0.06,
+    "6": 0.07
+   },
+   "selected": [
+    "2"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 2015,
+   "output_tokens": 166,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 9,
+     "selected": [
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A03",
+  "group": "direct",
+  "lang": "en",
+  "question": "How long does shipping take to the United States?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "5 to 10 business days",
+   "united states"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -7.507,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "5 to 10 business days",
+   "united states"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 671.2,
+  "service_s": 0.671,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 9,
+   "probs": {
+    "2": 0.98,
+    "9": 0.03,
+    "8": 0.05,
+    "1": 0.28,
+    "4": 0.05,
+    "3": 0.11,
+    "5": 0.05,
+    "0": 0.06,
+    "6": 0.13
+   },
+   "selected": [
+    "2"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 2017,
+   "output_tokens": 166,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 9,
+     "selected": [
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A04",
+  "group": "direct",
+  "lang": "en",
+  "question": "Who pays for return shipping on a regular return?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "customer pays return shipping"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -5.043,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [
+   "customer pays return shipping"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "latency_ms": 581.1,
+  "service_s": 0.581,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "5": 0.98,
+    "4": 0.2,
+    "2": 0.05,
+    "1": 0.07,
+    "0": 0.04,
+    "6": 0.04,
+    "8": 0.03,
+    "3": 0.09
+   },
+   "selected": [
+    "5"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1838,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": [
+      "5"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A05",
+  "group": "direct",
+  "lang": "en",
+  "question": "What should I do if my mug arrives damaged?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "photo within 7 days",
+   "replacement or a full refund"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -5.753,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [
+   "photo within 7 days",
+   "replacement or a full refund"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "latency_ms": 564.6,
+  "service_s": 0.565,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "4": 0.98,
+    "5": 0.87,
+    "6": 0.08,
+    "0": 0.09,
+    "8": 0.05,
+    "9": 0.42,
+    "2": 0.08
+   },
+   "selected": [
+    "4",
+    "5"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1690,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "4",
+      "5"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A06",
+  "group": "direct",
+  "lang": "en",
+  "question": "How much does the Aurora Mug cost?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [
+   "38"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -1.318,
+  "sources": [
+   "product.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "raw_sources": [
+   "product.html"
+  ],
+  "facts_found": [
+   "38"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "latency_ms": 428.4,
+  "service_s": 0.428,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "9": 0.04,
+    "8": 0.05,
+    "6": 0.99,
+    "0": 0.07,
+    "4": 0.05,
+    "2": 0.04
+   },
+   "selected": [
+    "6"
+   ],
+   "noul_max": 0.99,
+   "calls": 1,
+   "input_tokens": 1517,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": [
+      "6"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A07",
+  "group": "direct",
+  "lang": "en",
+  "question": "What is the capacity of the Aurora Mug?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [
+   "350 ml"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -1.57,
+  "sources": [
+   "product.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "raw_sources": [
+   "product.html"
+  ],
+  "facts_found": [
+   "350 ml"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "latency_ms": 342.1,
+  "service_s": 0.342,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "6": 0.99,
+    "0": 0.05,
+    "8": 0.04,
+    "4": 0.04,
+    "2": 0.03,
+    "9": 0.04
+   },
+   "selected": [
+    "6"
+   ],
+   "noul_max": 0.99,
+   "calls": 1,
+   "input_tokens": 1518,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": [
+      "6"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A08",
+  "group": "direct",
+  "lang": "en",
+  "question": "Is the Aurora Mug microwave safe?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [
+   "microwave safe"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -3.072,
+  "sources": [
+   "product.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "raw_sources": [
+   "product.html"
+  ],
+  "facts_found": [
+   "microwave safe"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "latency_ms": 342.8,
+  "service_s": 0.343,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "6": 0.99,
+    "9": 0.14,
+    "0": 0.13,
+    "8": 0.07,
+    "4": 0.03,
+    "2": 0.03
+   },
+   "selected": [
+    "6"
+   ],
+   "noul_max": 0.99,
+   "calls": 1,
+   "input_tokens": 1516,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": [
+      "6"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A09",
+  "group": "direct",
+  "lang": "en",
+  "question": "How should I wash the Aurora Mug?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html",
+   "faq.html"
+  ],
+  "expected_facts": [
+   "dishwasher safe",
+   "hand washing"
+  ],
+  "note": "Either product or FAQ chunk is acceptable; both state dishwasher safe + hand wash recommended.",
+  "got_behavior": "answer",
+  "score": -2.635,
+  "sources": [
+   "faq.html",
+   "product.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day. Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "raw_sources": [
+   "faq.html",
+   "product.html"
+  ],
+  "facts_found": [
+   "dishwasher safe",
+   "hand washing"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day. Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "latency_ms": 519.5,
+  "service_s": 0.52,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "9": 0.98,
+    "8": 0.1,
+    "1": 0.33,
+    "6": 0.98,
+    "0": 0.24,
+    "4": 0.03,
+    "2": 0.03
+   },
+   "selected": [
+    "9",
+    "6"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1676,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "9",
+      "6"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A10",
+  "group": "direct",
+  "lang": "en",
+  "question": "Do you offer gift wrapping and does it cost anything?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [
+   "gift wrapping is free",
+   "note at checkout",
+   "blank gift card"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -6.247,
+  "sources": [
+   "faq.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+  "raw_sources": [
+   "faq.html"
+  ],
+  "facts_found": [
+   "gift wrapping is free",
+   "note at checkout",
+   "blank gift card"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+  "latency_ms": 299.8,
+  "service_s": 0.3,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 1,
+   "probs": {
+    "8": 0.98
+   },
+   "selected": [
+    "8"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 490,
+   "output_tokens": 22,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 1,
+     "selected": [
+      "8"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A11",
+  "group": "direct",
+  "lang": "en",
+  "question": "Do you accept custom orders?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [
+   "do not accept custom orders"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -5.259,
+  "sources": [
+   "faq.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+  "raw_sources": [
+   "faq.html"
+  ],
+  "facts_found": [
+   "do not accept custom orders"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+  "latency_ms": 441.6,
+  "service_s": 0.442,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 3,
+   "probs": {
+    "8": 0.98,
+    "3": 0.04,
+    "2": 0.05
+   },
+   "selected": [
+    "8"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 861,
+   "output_tokens": 58,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 3,
+     "selected": [
+      "8"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A12",
+  "group": "direct",
+  "lang": "en",
+  "question": "How can I contact you and how soon will you reply?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [
+   "support@momoceramics.example",
+   "within one business day"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -5.292,
+  "sources": [
+   "faq.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day.",
+  "raw_sources": [
+   "faq.html"
+  ],
+  "facts_found": [
+   "support@momoceramics.example",
+   "within one business day"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day.",
+  "latency_ms": 335.3,
+  "service_s": 0.335,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 3,
+   "probs": {
+    "9": 0.98,
+    "8": 0.05,
+    "4": 0.14
+   },
+   "selected": [
+    "9"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 880,
+   "output_tokens": 58,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 3,
+     "selected": [
+      "9"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A13",
+  "group": "direct",
+  "lang": "en",
+  "question": "How much is shipping, and when is it free?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "free for orders over 80",
+   "flat 6 dollar"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -3.626,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "free for orders over 80",
+   "flat 6 dollar"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "latency_ms": 451.8,
+  "service_s": 0.452,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 9,
+   "probs": {
+    "3": 0.98,
+    "2": 0.16,
+    "8": 0.07,
+    "9": 0.04,
+    "1": 0.11,
+    "4": 0.05,
+    "5": 0.09,
+    "0": 0.06,
+    "6": 0.1
+   },
+   "selected": [
+    "3"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 2018,
+   "output_tokens": 166,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 9,
+     "selected": [
+      "3"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A14",
+  "group": "direct",
+  "lang": "en",
+  "question": "How long does it take to process an order before it ships?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "processed in 2 to 3 business days"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -6.706,
+  "sources": [
+   "product.html",
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "product.html",
+   "shipping.html"
+  ],
+  "facts_found": [
+   "processed in 2 to 3 business days"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 343.1,
+  "service_s": 0.343,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 5,
+   "probs": {
+    "3": 0.1,
+    "8": 0.05,
+    "9": 0.04,
+    "6": 0.6,
+    "2": 0.98
+   },
+   "selected": [
+    "6",
+    "2"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1266,
+   "output_tokens": 94,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 5,
+     "selected": [
+      "6",
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A15",
+  "group": "direct",
+  "lang": "en",
+  "question": "Which countries do you ship to?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "japan",
+   "united states",
+   "canada",
+   "european union"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -2.792,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "japan",
+   "united states",
+   "canada",
+   "european union"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 410.8,
+  "service_s": 0.411,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "2": 0.99,
+    "1": 0.07,
+    "4": 0.03,
+    "3": 0.06,
+    "5": 0.03,
+    "0": 0.06,
+    "6": 0.06,
+    "8": 0.05
+   },
+   "selected": [
+    "2"
+   ],
+   "noul_max": 0.99,
+   "calls": 1,
+   "input_tokens": 1835,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": [
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "A16",
+  "group": "direct",
+  "lang": "en",
+  "question": "How do I get a tracking number for my order?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "tracking number is emailed",
+   "when your order ships"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -6.706,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "tracking number is emailed",
+   "when your order ships"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "latency_ms": 358.8,
+  "service_s": 0.359,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 5,
+   "probs": {
+    "3": 0.96,
+    "8": 0.04,
+    "9": 0.06,
+    "6": 0.05,
+    "2": 0.12
+   },
+   "selected": [
+    "3"
+   ],
+   "noul_max": 0.96,
+   "calls": 1,
+   "input_tokens": 1264,
+   "output_tokens": 94,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 5,
+     "selected": [
+      "3"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B01",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "If the cup doesn't suit me, can I send it back and get my money back?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "30 days",
+   "full refund"
+  ],
+  "note": "Avoids the words 'return policy'; tests synonym/colloquial matching.",
+  "got_behavior": "answer",
+  "score": -3.835,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [
+   "30 days",
+   "full refund"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer.",
+  "latency_ms": 340.8,
+  "service_s": 0.341,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 1,
+   "probs": {
+    "4": 0.97
+   },
+   "selected": [
+    "4"
+   ],
+   "noul_max": 0.97,
+   "calls": 1,
+   "input_tokens": 491,
+   "output_tokens": 22,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 1,
+     "selected": [
+      "4"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B02",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "How soon will my order land in California?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "5 to 10 business days"
+  ],
+  "note": "California -> United States inference required.",
+  "got_behavior": "answer",
+  "score": -4.526,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "5 to 10 business days"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 474.3,
+  "service_s": 0.474,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "3": 0.29,
+    "8": 0.04,
+    "9": 0.03,
+    "4": 0.05,
+    "6": 0.21,
+    "2": 0.95
+   },
+   "selected": [
+    "2"
+   ],
+   "noul_max": 0.95,
+   "calls": 1,
+   "input_tokens": 1472,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": [
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B03",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "Is it okay to zap it in the microwave?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [
+   "microwave safe"
+  ],
+  "note": "Colloquial 'zap'; almost no keyword overlap.",
+  "got_behavior": "answer",
+  "score": -1.57,
+  "sources": [
+   "product.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "raw_sources": [
+   "product.html"
+  ],
+  "facts_found": [
+   "microwave safe"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "latency_ms": 323.0,
+  "service_s": 0.323,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 1,
+   "probs": {
+    "6": 0.98
+   },
+   "selected": [
+    "6"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 491,
+   "output_tokens": 22,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 1,
+     "selected": [
+      "6"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B04",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "Will I be charged for postage if my basket totals 90 dollars?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "free for orders over 80"
+  ],
+  "note": "Postage = shipping; 90 > 80 so free.",
+  "got_behavior": "answer",
+  "score": -4.182,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "free for orders over 80"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "latency_ms": 538.6,
+  "service_s": 0.539,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 4,
+   "probs": {
+    "4": 0.05,
+    "3": 0.98,
+    "6": 0.32,
+    "8": 0.05
+   },
+   "selected": [
+    "3"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1091,
+   "output_tokens": 76,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 4,
+     "selected": [
+      "3"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B05",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "The cup showed up cracked — what should I do?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "photo within 7 days",
+   "replacement or a full refund"
+  ],
+  "note": "Cracked = damaged synonym.",
+  "got_behavior": "fallback",
+  "score": -2.536,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 423.9,
+  "service_s": 0.424,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 1,
+   "probs": {
+    "7": 0.06
+   },
+   "selected": [],
+   "noul_max": 0.06,
+   "calls": 1,
+   "input_tokens": 425,
+   "output_tokens": 22,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 1,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B06",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "Can you make me a bigger one with my name on it?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [
+   "do not accept custom orders"
+  ],
+  "note": "A custom-order request phrased as a personal ask.",
+  "got_behavior": "fallback",
+  "score": -1.987,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 272.5,
+  "service_s": 0.272,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 1,
+   "probs": {
+    "9": 0.18
+   },
+   "selected": [],
+   "noul_max": 0.18,
+   "calls": 1,
+   "input_tokens": 454,
+   "output_tokens": 22,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 1,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B07",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "How much liquid does it hold?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [
+   "350 ml"
+  ],
+  "note": "Capacity asked without the word capacity.",
+  "got_behavior": "fallback",
+  "score": -1.318,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 279.1,
+  "service_s": 0.279,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 2,
+   "probs": {
+    "9": 0.03,
+    "8": 0.03
+   },
+   "selected": [],
+   "noul_max": 0.03,
+   "calls": 1,
+   "input_tokens": 665,
+   "output_tokens": 40,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 2,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B08",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "Who do I write to for help, and how long until they get back to me?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [
+   "support@momoceramics.example",
+   "within one business day"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -1.318,
+  "sources": [
+   "faq.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day.",
+  "raw_sources": [
+   "faq.html"
+  ],
+  "facts_found": [
+   "support@momoceramics.example",
+   "within one business day"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day.",
+  "latency_ms": 384.4,
+  "service_s": 0.384,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 2,
+   "probs": {
+    "9": 0.98,
+    "8": 0.04
+   },
+   "selected": [
+    "9"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 676,
+   "output_tokens": 40,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 2,
+     "selected": [
+      "9"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B09",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "Will putting it in the dishwasher ruin the finish?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html",
+   "faq.html"
+  ],
+  "expected_facts": [
+   "dishwasher safe",
+   "hand washing"
+  ],
+  "note": "Nuanced: safe, but hand washing recommended to protect the glaze.",
+  "got_behavior": "answer",
+  "score": -2.612,
+  "sources": [
+   "product.html",
+   "faq.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day.",
+  "raw_sources": [
+   "product.html",
+   "faq.html"
+  ],
+  "facts_found": [
+   "dishwasher safe",
+   "hand washing"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day.",
+  "latency_ms": 346.2,
+  "service_s": 0.346,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 4,
+   "probs": {
+    "6": 0.96,
+    "9": 0.97,
+    "4": 0.03,
+    "8": 0.1
+   },
+   "selected": [
+    "6",
+    "9"
+   ],
+   "noul_max": 0.97,
+   "calls": 1,
+   "input_tokens": 1097,
+   "output_tokens": 76,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 4,
+     "selected": [
+      "6",
+      "9"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "B10",
+  "group": "paraphrase",
+  "lang": "en",
+  "question": "Do I have to pay to mail it back if I simply changed my mind?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "customer pays return shipping"
+  ],
+  "note": "Changed-my-mind = regular return.",
+  "got_behavior": "answer",
+  "score": -1.57,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer.",
+  "latency_ms": 424.4,
+  "service_s": 0.424,
+  "verdict": "partial",
+  "jev": {
+   "n_candidates": 1,
+   "probs": {
+    "4": 0.56
+   },
+   "selected": [
+    "4"
+   ],
+   "noul_max": 0.56,
+   "calls": 1,
+   "input_tokens": 488,
+   "output_tokens": 22,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 1,
+     "selected": [
+      "4"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C01",
+  "group": "multihop",
+  "lang": "en",
+  "question": "I'm buying 3 Aurora Mugs as gifts — will shipping be free, and can you wrap them?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html",
+   "shipping.html",
+   "faq.html"
+  ],
+  "expected_facts": [
+   "38",
+   "free for orders over 80",
+   "gift wrapping is free"
+  ],
+  "note": "3 x $38 = $114 > $80 threshold; needs price + shipping + FAQ pages.",
+  "got_behavior": "answer",
+  "score": -3.547,
+  "sources": [
+   "faq.html",
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug? Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "raw_sources": [
+   "faq.html",
+   "shipping.html"
+  ],
+  "facts_found": [
+   "free for orders over 80",
+   "gift wrapping is free"
+  ],
+  "facts_ratio": 0.67,
+  "answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug? Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "latency_ms": 314.7,
+  "service_s": 0.315,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "4": 0.06,
+    "8": 0.96,
+    "2": 0.22,
+    "0": 0.09,
+    "3": 0.95,
+    "1": 0.07,
+    "6": 0.17,
+    "5": 0.05
+   },
+   "selected": [
+    "8",
+    "3"
+   ],
+   "noul_max": 0.96,
+   "calls": 1,
+   "input_tokens": 1850,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": [
+      "8",
+      "3"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C02",
+  "group": "multihop",
+  "lang": "en",
+  "question": "Counting everything, how long from placing an order until it reaches me in the US?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "processed in 2 to 3 business days",
+   "5 to 10 business days"
+  ],
+  "note": "Processing + delivery must both be retrieved; total 7-13 business days is derived, scored on both facts being present.",
+  "got_behavior": "answer",
+  "score": -4.96,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "processed in 2 to 3 business days",
+   "5 to 10 business days"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 314.9,
+  "service_s": 0.315,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "3": 0.16,
+    "8": 0.05,
+    "9": 0.03,
+    "6": 0.41,
+    "2": 0.98,
+    "4": 0.06
+   },
+   "selected": [
+    "2"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1482,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": [
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C03",
+  "group": "multihop",
+  "lang": "en",
+  "question": "If I buy just one Aurora Mug, what is my total including shipping?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html",
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "38",
+   "flat 6 dollar"
+  ],
+  "note": "$38 + $6 = $44; the $38 alone is under the free-shipping threshold.",
+  "got_behavior": "answer",
+  "score": -2.792,
+  "sources": [
+   "product.html",
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "raw_sources": [
+   "product.html",
+   "shipping.html"
+  ],
+  "facts_found": [
+   "38",
+   "flat 6 dollar"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "latency_ms": 475.5,
+  "service_s": 0.476,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 9,
+   "probs": {
+    "2": 0.28,
+    "4": 0.06,
+    "9": 0.04,
+    "1": 0.05,
+    "6": 0.96,
+    "0": 0.09,
+    "8": 0.07,
+    "3": 0.95,
+    "5": 0.08
+   },
+   "selected": [
+    "6",
+    "3"
+   ],
+   "noul_max": 0.96,
+   "calls": 1,
+   "input_tokens": 2022,
+   "output_tokens": 166,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 9,
+     "selected": [
+      "6",
+      "3"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C04",
+  "group": "multihop",
+  "lang": "en",
+  "question": "I live in Canada — can I get a mug gift wrapped, and how long will delivery take?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html",
+   "faq.html"
+  ],
+  "expected_facts": [
+   "canada",
+   "5 to 10 business days",
+   "gift wrapping is free"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -5.15,
+  "sources": [
+   "shipping.html",
+   "faq.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union. Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug? Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "raw_sources": [
+   "shipping.html",
+   "faq.html"
+  ],
+  "facts_found": [
+   "canada",
+   "5 to 10 business days",
+   "gift wrapping is free"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union. Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug? Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "latency_ms": 509.1,
+  "service_s": 0.509,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 9,
+   "probs": {
+    "2": 0.97,
+    "8": 0.95,
+    "4": 0.06,
+    "9": 0.07,
+    "1": 0.18,
+    "6": 0.15,
+    "0": 0.1,
+    "3": 0.51,
+    "5": 0.04
+   },
+   "selected": [
+    "2",
+    "8",
+    "3"
+   ],
+   "noul_max": 0.97,
+   "calls": 1,
+   "input_tokens": 2027,
+   "output_tokens": 166,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 9,
+     "selected": [
+      "2",
+      "8",
+      "3"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C05",
+  "group": "multihop",
+  "lang": "en",
+  "question": "Can I order a custom-coloured mug and have it shipped to Australia?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html",
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "do not accept custom orders",
+   "japan, the united states, canada and the european union"
+  ],
+  "note": "Both parts must be answered No: no custom orders, and Australia is not in the shipping list.",
+  "got_behavior": "answer",
+  "score": -4.526,
+  "sources": [
+   "faq.html",
+   "product.html",
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug? Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "faq.html",
+   "product.html",
+   "shipping.html"
+  ],
+  "facts_found": [
+   "do not accept custom orders",
+   "japan, the united states, canada and the european union"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug? Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches. Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 550.2,
+  "service_s": 0.55,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "3": 0.41,
+    "8": 0.95,
+    "6": 0.73,
+    "2": 0.93,
+    "0": 0.48,
+    "4": 0.07,
+    "9": 0.08
+   },
+   "selected": [
+    "8",
+    "6",
+    "2"
+   ],
+   "noul_max": 0.95,
+   "calls": 1,
+   "input_tokens": 1692,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "8",
+      "6",
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C06",
+  "group": "multihop",
+  "lang": "en",
+  "question": "My mug arrived damaged and I'd rather have my money back than a new one — is that allowed?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "photo within 7 days",
+   "replacement or a full refund",
+   "whichever you prefer"
+  ],
+  "note": "",
+  "got_behavior": "answer",
+  "score": -2.612,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [
+   "photo within 7 days",
+   "replacement or a full refund",
+   "whichever you prefer"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "latency_ms": 566.1,
+  "service_s": 0.566,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "4": 0.98,
+    "9": 0.06,
+    "5": 0.92,
+    "6": 0.13,
+    "0": 0.08,
+    "8": 0.06,
+    "2": 0.07
+   },
+   "selected": [
+    "4",
+    "5"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1701,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "4",
+      "5"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C07",
+  "group": "multihop",
+  "lang": "en",
+  "question": "I need a mug delivered in Tokyo within 3 days — can you guarantee that?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "processed in 2 to 3 business days",
+   "2 to 4 business days"
+  ],
+  "note": "Minimum total is 2+2 = 4 business days, so 3 days cannot be guaranteed; scored on both facts being retrieved.",
+  "got_behavior": "answer",
+  "score": -1.462,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "processed in 2 to 3 business days",
+   "2 to 4 business days"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 503.5,
+  "service_s": 0.504,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "2": 0.97,
+    "4": 0.09,
+    "5": 0.04,
+    "9": 0.07,
+    "6": 0.37,
+    "0": 0.27,
+    "8": 0.08
+   },
+   "selected": [
+    "2"
+   ],
+   "noul_max": 0.97,
+   "calls": 1,
+   "input_tokens": 1697,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C08",
+  "group": "multihop",
+  "lang": "en",
+  "question": "I'm buying 2 Aurora Mugs — do I get free shipping?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html",
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "38",
+   "free for orders over 80"
+  ],
+  "note": "Trap arithmetic: 2 x $38 = $76 < $80, so NOT free; paired with C01/C03 as a threshold discrimination set.",
+  "got_behavior": "answer",
+  "score": -2.792,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [
+   "free for orders over 80"
+  ],
+  "facts_ratio": 0.5,
+  "answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+  "latency_ms": 287.7,
+  "service_s": 0.288,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "2": 0.14,
+    "0": 0.08,
+    "3": 0.96,
+    "8": 0.07,
+    "1": 0.06,
+    "4": 0.06,
+    "6": 0.34,
+    "5": 0.04
+   },
+   "selected": [
+    "3"
+   ],
+   "noul_max": 0.96,
+   "calls": 1,
+   "input_tokens": 1843,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": [
+      "3"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C09",
+  "group": "multihop",
+  "lang": "en",
+  "question": "Will a set of 4 Aurora Mugs all be exactly the same height?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html",
+   "index.html"
+  ],
+  "expected_facts": [
+   "vary by up to 5 mm",
+   "variations in color and size"
+  ],
+  "note": "Handmade variation stated on both product and home pages.",
+  "got_behavior": "answer",
+  "score": -2.728,
+  "sources": [
+   "index.html",
+   "product.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Momo Ceramics — handmade mugs Home · Aurora Mug · Shipping · Returns · FAQ Momo Ceramics — handmade mugs Momo Ceramics is a small independent studio in Kyoto making handmade stoneware mugs in small batches. Every mug is thrown, glazed and fired by hand, so small variations in color and size are part of the craft. Our best seller is the Aurora Mug. Because it is handmade, the height may vary by up to 5 mm between pieces. Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "raw_sources": [
+   "index.html",
+   "product.html"
+  ],
+  "facts_found": [
+   "vary by up to 5 mm",
+   "variations in color and size"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Momo Ceramics — handmade mugs Home · Aurora Mug · Shipping · Returns · FAQ Momo Ceramics — handmade mugs Momo Ceramics is a small independent studio in Kyoto making handmade stoneware mugs in small batches. Every mug is thrown, glazed and fired by hand, so small variations in color and size are part of the craft. Our best seller is the Aurora Mug. Because it is handmade, the height may vary by up to 5 mm between pieces. Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+  "latency_ms": 408.7,
+  "service_s": 0.409,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "0": 0.93,
+    "4": 0.04,
+    "7": 0.96,
+    "5": 0.02,
+    "8": 0.04,
+    "6": 0.64,
+    "2": 0.03
+   },
+   "selected": [
+    "0",
+    "7",
+    "6"
+   ],
+   "noul_max": 0.96,
+   "calls": 1,
+   "input_tokens": 1669,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "0",
+      "7",
+      "6"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "C10",
+  "group": "multihop",
+  "lang": "en",
+  "question": "My mug arrived broken — do I have to pay the return costs, and what are my options?",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "cover all costs",
+   "replacement or a full refund"
+  ],
+  "note": "Damaged items: store covers all costs — the opposite of regular returns (contrast with A04/B10).",
+  "got_behavior": "answer",
+  "score": -5.525,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [
+   "cover all costs",
+   "replacement or a full refund"
+  ],
+  "facts_ratio": 1.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "latency_ms": 392.3,
+  "service_s": 0.392,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "4": 0.94,
+    "5": 0.98,
+    "1": 0.12,
+    "6": 0.09,
+    "0": 0.06,
+    "8": 0.06,
+    "2": 0.08,
+    "9": 0.1
+   },
+   "selected": [
+    "4",
+    "5"
+   ],
+   "noul_max": 0.98,
+   "calls": 1,
+   "input_tokens": 1859,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": [
+      "4",
+      "5"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D01",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "Do you offer express or next-day shipping?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [],
+  "note": "Shipping page exists but says nothing about express options. Returning the shipping chunk counts as a fallback failure.",
+  "got_behavior": "answer",
+  "score": -2.792,
+  "sources": [
+   "shipping.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "raw_sources": [
+   "shipping.html"
+  ],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+  "latency_ms": 611.2,
+  "service_s": 0.611,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 9,
+   "probs": {
+    "2": 0.79,
+    "9": 0.04,
+    "8": 0.05,
+    "1": 0.21,
+    "4": 0.05,
+    "3": 0.15,
+    "5": 0.03,
+    "0": 0.06,
+    "6": 0.15
+   },
+   "selected": [
+    "2"
+   ],
+   "noul_max": 0.79,
+   "calls": 1,
+   "input_tokens": 2016,
+   "output_tokens": 166,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 9,
+     "selected": [
+      "2"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D02",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "How heavy is the Aurora Mug in grams?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [],
+  "note": "Weight is never stated; capacity and height variation are the trap.",
+  "got_behavior": "fallback",
+  "score": -1.318,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 489.7,
+  "service_s": 0.49,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "9": 0.03,
+    "8": 0.03,
+    "6": 0.16,
+    "0": 0.05,
+    "4": 0.03,
+    "2": 0.03
+   },
+   "selected": [],
+   "noul_max": 0.16,
+   "calls": 1,
+   "input_tokens": 1518,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D03",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "Is the glaze certified lead-free and food safe?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [],
+  "note": "Microwave/dishwasher safe is stated; lead-free/food-safety certification is not. High fabrication risk if a system paraphrases it into a yes.",
+  "got_behavior": "fallback",
+  "score": -3.003,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 417.9,
+  "service_s": 0.418,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 4,
+   "probs": {
+    "6": 0.29,
+    "9": 0.08,
+    "3": 0.02,
+    "8": 0.03
+   },
+   "selected": [],
+   "noul_max": 0.29,
+   "calls": 1,
+   "input_tokens": 1056,
+   "output_tokens": 76,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 4,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D04",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "Do you offer a warranty if the mug cracks after a year?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [],
+  "note": "Damage policy covers arrival damage within 7 days only; no warranty is stated.",
+  "got_behavior": "answer",
+  "score": -2.09,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer.",
+  "latency_ms": 390.2,
+  "service_s": 0.39,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "5": 0.38,
+    "4": 0.7,
+    "8": 0.06,
+    "6": 0.08,
+    "0": 0.08,
+    "9": 0.07,
+    "2": 0.04
+   },
+   "selected": [
+    "4"
+   ],
+   "noul_max": 0.7,
+   "calls": 1,
+   "input_tokens": 1693,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "4"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D05",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "Can I change the delivery address after placing an order?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [],
+  "note": "Address changes are never mentioned. Contrast with F03, which is an execution request on the same topic.",
+  "got_behavior": "fallback",
+  "score": -4.526,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 468.9,
+  "service_s": 0.469,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "3": 0.04,
+    "2": 0.09,
+    "5": 0.03,
+    "6": 0.07,
+    "1": 0.03,
+    "4": 0.04,
+    "8": 0.04,
+    "0": 0.04
+   },
+   "selected": [],
+   "noul_max": 0.09,
+   "calls": 1,
+   "input_tokens": 1839,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D06",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "What discount do I get if I buy 10 or more mugs for my office?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "product.html"
+  ],
+  "expected_facts": [],
+  "note": "No bulk/wholesale pricing is stated.",
+  "got_behavior": "fallback",
+  "score": -2.728,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 386.9,
+  "service_s": 0.387,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 3,
+   "probs": {
+    "0": 0.04,
+    "2": 0.03,
+    "4": 0.03
+   },
+   "selected": [],
+   "noul_max": 0.04,
+   "calls": 1,
+   "input_tokens": 913,
+   "output_tokens": 58,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 3,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D07",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "Can I buy a gift card to give someone instead of a mug?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [],
+  "note": "Trap: a blank gift CARD is included free with gift wrapping, but gift cards for purchase are not offered anywhere.",
+  "got_behavior": "answer",
+  "score": -4.067,
+  "sources": [
+   "faq.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+  "raw_sources": [
+   "faq.html"
+  ],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+  "latency_ms": 340.0,
+  "service_s": 0.34,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "8": 0.56,
+    "6": 0.08,
+    "0": 0.09,
+    "4": 0.05,
+    "9": 0.04,
+    "2": 0.04
+   },
+   "selected": [
+    "8"
+   ],
+   "noul_max": 0.56,
+   "calls": 1,
+   "input_tokens": 1523,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": [
+      "8"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "D08",
+  "group": "near_miss",
+  "lang": "en",
+  "question": "Can I visit your Kyoto studio in person, and what are its opening hours?",
+  "expected_behavior": "fallback",
+  "expected_sources": [
+   "index.html"
+  ],
+  "expected_facts": [],
+  "note": "Kyoto studio is mentioned; visiting and opening hours are not.",
+  "got_behavior": "fallback",
+  "score": -2.739,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 491.4,
+  "service_s": 0.491,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 2,
+   "probs": {
+    "0": 0.48,
+    "8": 0.23
+   },
+   "selected": [],
+   "noul_max": 0.48,
+   "calls": 1,
+   "input_tokens": 709,
+   "output_tokens": 40,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 2,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "E01",
+  "group": "unanswerable",
+  "lang": "en",
+  "question": "Can I pay with Bitcoin?",
+  "expected_behavior": "fallback",
+  "expected_sources": [],
+  "expected_facts": [],
+  "note": "The original smoke-test question; must stay a correct fallback in every system.",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.2,
+  "service_s": 0.0,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "E02",
+  "group": "unanswerable",
+  "lang": "en",
+  "question": "Do you have a loyalty points program?",
+  "expected_behavior": "fallback",
+  "expected_sources": [],
+  "expected_facts": [],
+  "note": "",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.1,
+  "service_s": 0.0,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "E03",
+  "group": "unanswerable",
+  "lang": "en",
+  "question": "Do you sell plates or tea sets as well?",
+  "expected_behavior": "fallback",
+  "expected_sources": [],
+  "expected_facts": [],
+  "note": "Only mugs / the Aurora Mug are listed; a system may note that only listed designs are sold, but must not invent other products.",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.1,
+  "service_s": 0.0,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "E04",
+  "group": "unanswerable",
+  "lang": "en",
+  "question": "Do you run a monthly subscription for a new mug every month?",
+  "expected_behavior": "fallback",
+  "expected_sources": [],
+  "expected_facts": [],
+  "note": "",
+  "got_behavior": "fallback",
+  "score": -1.647,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 510.4,
+  "service_s": 0.51,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 6,
+   "probs": {
+    "0": 0.1,
+    "6": 0.13,
+    "8": 0.06,
+    "4": 0.06,
+    "9": 0.04,
+    "2": 0.04
+   },
+   "selected": [],
+   "noul_max": 0.13,
+   "calls": 1,
+   "input_tokens": 1522,
+   "output_tokens": 112,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 6,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "E05",
+  "group": "unanswerable",
+  "lang": "en",
+  "question": "Are you hiring staff for the studio?",
+  "expected_behavior": "fallback",
+  "expected_sources": [],
+  "expected_facts": [],
+  "note": "",
+  "got_behavior": "fallback",
+  "score": -1.092,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 405.8,
+  "service_s": 0.406,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 2,
+   "probs": {
+    "0": 0.06,
+    "8": 0.09
+   },
+   "selected": [],
+   "noul_max": 0.09,
+   "calls": 1,
+   "input_tokens": 701,
+   "output_tokens": 40,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 2,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "E06",
+  "group": "unanswerable",
+  "lang": "en",
+  "question": "What is the weather like in Kyoto today?",
+  "expected_behavior": "fallback",
+  "expected_sources": [],
+  "expected_facts": [],
+  "note": "Completely off-domain control question.",
+  "got_behavior": "fallback",
+  "score": -1.647,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 401.3,
+  "service_s": 0.401,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 1,
+   "probs": {
+    "0": 0.05
+   },
+   "selected": [],
+   "noul_max": 0.05,
+   "calls": 1,
+   "input_tokens": 485,
+   "output_tokens": 22,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 1,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "F01",
+  "group": "handoff",
+  "lang": "en",
+  "question": "Please cancel my order number 1042 and refund me right now.",
+  "expected_behavior": "handoff",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [],
+  "note": "Execution request. Citing the refund policy as info is acceptable only alongside a handoff; claiming the cancellation was done is a critical failure.",
+  "got_behavior": "answer",
+  "score": -6.706,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "latency_ms": 356.6,
+  "service_s": 0.357,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "3": 0.04,
+    "4": 0.63,
+    "6": 0.05,
+    "1": 0.06,
+    "8": 0.05,
+    "5": 0.72,
+    "2": 0.17,
+    "0": 0.04
+   },
+   "selected": [
+    "4",
+    "5"
+   ],
+   "noul_max": 0.72,
+   "calls": 1,
+   "input_tokens": 1844,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": [
+      "4",
+      "5"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "F02",
+  "group": "handoff",
+  "lang": "en",
+  "question": "Where is my order number 1042 right now? Track it for me.",
+  "expected_behavior": "handoff",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [],
+  "note": "Live order status is impossible from the corpus; the tracking-number-by-email fact may be explained, but the request itself must go to a human.",
+  "got_behavior": "fallback",
+  "score": -6.706,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 510.2,
+  "service_s": 0.51,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 4,
+   "probs": {
+    "3": 0.43,
+    "6": 0.04,
+    "8": 0.04,
+    "2": 0.25
+   },
+   "selected": [],
+   "noul_max": 0.43,
+   "calls": 1,
+   "input_tokens": 1092,
+   "output_tokens": 76,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 4,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "F03",
+  "group": "handoff",
+  "lang": "en",
+  "question": "Change the shipping address on the order I placed yesterday.",
+  "expected_behavior": "handoff",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [],
+  "note": "Execution request; contrast with D05 (information question on the same topic).",
+  "got_behavior": "fallback",
+  "score": -4.526,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 323.6,
+  "service_s": 0.324,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 8,
+   "probs": {
+    "3": 0.04,
+    "2": 0.09,
+    "6": 0.04,
+    "1": 0.04,
+    "4": 0.04,
+    "8": 0.04,
+    "5": 0.03,
+    "0": 0.04
+   },
+   "selected": [],
+   "noul_max": 0.09,
+   "calls": 1,
+   "input_tokens": 1839,
+   "output_tokens": 148,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 8,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "F04",
+  "group": "handoff",
+  "lang": "en",
+  "question": "My mug arrived damaged — please start my replacement shipment today.",
+  "expected_behavior": "handoff",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [],
+  "note": "Policy facts (photo within 7 days, replacement choice) may be given, but starting a shipment must be handed off.",
+  "got_behavior": "answer",
+  "score": -2.612,
+  "sources": [
+   "returns.html"
+  ],
+  "source_ok": true,
+  "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "raw_sources": [
+   "returns.html"
+  ],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+  "latency_ms": 419.5,
+  "service_s": 0.419,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 7,
+   "probs": {
+    "4": 0.95,
+    "5": 0.8,
+    "6": 0.1,
+    "0": 0.06,
+    "8": 0.06,
+    "9": 0.22,
+    "2": 0.33
+   },
+   "selected": [
+    "4",
+    "5"
+   ],
+   "noul_max": 0.95,
+   "calls": 1,
+   "input_tokens": 1692,
+   "output_tokens": 130,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 7,
+     "selected": [
+      "4",
+      "5"
+     ]
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "F05",
+  "group": "handoff",
+  "lang": "en",
+  "question": "Apply the discount code MOMO10 to my last order and charge my card again.",
+  "expected_behavior": "handoff",
+  "expected_sources": [],
+  "expected_facts": [],
+  "note": "The code MOMO10 is invented by the test; any system confirming it is fabricating. Must hand off.",
+  "got_behavior": "fallback",
+  "score": -4.526,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 470.5,
+  "service_s": 0.471,
+  "verdict": "hit",
+  "jev": {
+   "n_candidates": 4,
+   "probs": {
+    "3": 0.05,
+    "8": 0.04,
+    "6": 0.04,
+    "2": 0.04
+   },
+   "selected": [],
+   "noul_max": 0.05,
+   "calls": 1,
+   "input_tokens": 1092,
+   "output_tokens": 76,
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": 4,
+     "selected": []
+    }
+   ],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "G01",
+  "group": "zh_exploratory",
+  "lang": "zh",
+  "question": "你们的退货政策是多久内可以退？",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "returns.html"
+  ],
+  "expected_facts": [
+   "30 days",
+   "full refund"
+  ],
+  "note": "Mirror of A01 in Chinese; the current tokeniser is English-only, the SAG2 paper's benchmarks are English-only — this slice tests both claims.",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.0,
+  "service_s": 0.0,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "G02",
+  "group": "zh_exploratory",
+  "lang": "zh",
+  "question": "寄到美国大概需要多长时间？",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "shipping.html"
+  ],
+  "expected_facts": [
+   "5 to 10 business days"
+  ],
+  "note": "",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.0,
+  "service_s": 0.0,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "G03",
+  "group": "zh_exploratory",
+  "lang": "zh",
+  "question": "这个杯子可以用洗碗机清洗吗？",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "product.html",
+   "faq.html"
+  ],
+  "expected_facts": [
+   "dishwasher safe"
+  ],
+  "note": "",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.0,
+  "service_s": 0.0,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "G04",
+  "group": "zh_exploratory",
+  "lang": "zh",
+  "question": "你们提供礼品包装吗？需要额外收费吗？",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [
+   "gift wrapping is free"
+  ],
+  "note": "",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.0,
+  "service_s": 0.0,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ },
+ {
+  "id": "G05",
+  "group": "zh_exploratory",
+  "lang": "zh",
+  "question": "可以定做一个刻着我名字的杯子吗？",
+  "expected_behavior": "answer",
+  "expected_sources": [
+   "faq.html"
+  ],
+  "expected_facts": [
+   "do not accept custom orders"
+  ],
+  "note": "",
+  "got_behavior": "fallback",
+  "score": 0.0,
+  "sources": [],
+  "source_ok": false,
+  "raw_answer_text": "",
+  "raw_sources": [],
+  "facts_found": [],
+  "facts_ratio": 0.0,
+  "answer_text": "",
+  "latency_ms": 0.0,
+  "service_s": 0.0,
+  "verdict": "miss",
+  "jev": {
+   "n_candidates": 0,
+   "probs": {},
+   "selected": [],
+   "noul_max": null,
+   "calls": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "rounds": [],
+   "expansion_terms": []
+  }
+ }
+]

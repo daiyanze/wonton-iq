@@ -1,0 +1,13 @@
+# 运行时数据（开通的站点、提问/未答事件），不入库
+data/*.json
+__pycache__/
+*.pyc
+.DS_Store
+
+# 实验环境与模型缓存（本地重建，不入库）
+eval/.venv-emb/
+eval/.hf-cache/
+
+# 密钥文件（如有）永不入库
+.env
+*.key

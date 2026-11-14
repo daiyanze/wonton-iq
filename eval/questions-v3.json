@@ -1,0 +1,2344 @@
+{
+ "store": "Momo Ceramics (fictional sample store)",
+ "version": "3.0",
+ "date": "2026-11-14",
+ "total": 155,
+ "note": "v1（60，含中文探索 5）+ v2 新增（45）+ v3 新增（50）合并版，set 字段标来源；回归口径的 100 题 = v1 英文核心 55 + v2 新增 45。",
+ "questions": [
+  {
+   "id": "A01",
+   "group": "direct",
+   "lang": "en",
+   "question": "What is your return policy?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "full refund",
+    "unused",
+    "original packaging"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A02",
+   "group": "direct",
+   "lang": "en",
+   "question": "How long does delivery take within Japan?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 4 business days",
+    "japan"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A03",
+   "group": "direct",
+   "lang": "en",
+   "question": "How long does shipping take to the United States?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days",
+    "united states"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A04",
+   "group": "direct",
+   "lang": "en",
+   "question": "Who pays for return shipping on a regular return?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "customer pays return shipping"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A05",
+   "group": "direct",
+   "lang": "en",
+   "question": "What should I do if my mug arrives damaged?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "photo within 7 days",
+    "replacement or a full refund"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A06",
+   "group": "direct",
+   "lang": "en",
+   "question": "How much does the Aurora Mug cost?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A07",
+   "group": "direct",
+   "lang": "en",
+   "question": "What is the capacity of the Aurora Mug?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A08",
+   "group": "direct",
+   "lang": "en",
+   "question": "Is the Aurora Mug microwave safe?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A09",
+   "group": "direct",
+   "lang": "en",
+   "question": "How should I wash the Aurora Mug?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "dishwasher safe",
+    "hand washing"
+   ],
+   "note": "Either product or FAQ chunk is acceptable; both state dishwasher safe + hand wash recommended.",
+   "set": "v1"
+  },
+  {
+   "id": "A10",
+   "group": "direct",
+   "lang": "en",
+   "question": "Do you offer gift wrapping and does it cost anything?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free",
+    "note at checkout",
+    "blank gift card"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A11",
+   "group": "direct",
+   "lang": "en",
+   "question": "Do you accept custom orders?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A12",
+   "group": "direct",
+   "lang": "en",
+   "question": "How can I contact you and how soon will you reply?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "support@momoceramics.example",
+    "within one business day"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A13",
+   "group": "direct",
+   "lang": "en",
+   "question": "How much is shipping, and when is it free?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "free for orders over 80",
+    "flat 6 dollar"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A14",
+   "group": "direct",
+   "lang": "en",
+   "question": "How long does it take to process an order before it ships?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "processed in 2 to 3 business days"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A15",
+   "group": "direct",
+   "lang": "en",
+   "question": "Which countries do you ship to?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "japan",
+    "united states",
+    "canada",
+    "european union"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "A16",
+   "group": "direct",
+   "lang": "en",
+   "question": "How do I get a tracking number for my order?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "tracking number is emailed",
+    "when your order ships"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "B01",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "If the cup doesn't suit me, can I send it back and get my money back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "full refund"
+   ],
+   "note": "Avoids the words 'return policy'; tests synonym/colloquial matching.",
+   "set": "v1"
+  },
+  {
+   "id": "B02",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "How soon will my order land in California?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "California -> United States inference required.",
+   "set": "v1"
+  },
+  {
+   "id": "B03",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "Is it okay to zap it in the microwave?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "Colloquial 'zap'; almost no keyword overlap.",
+   "set": "v1"
+  },
+  {
+   "id": "B04",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "Will I be charged for postage if my basket totals 90 dollars?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "free for orders over 80"
+   ],
+   "note": "Postage = shipping; 90 > 80 so free.",
+   "set": "v1"
+  },
+  {
+   "id": "B05",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "The cup showed up cracked — what should I do?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "photo within 7 days",
+    "replacement or a full refund"
+   ],
+   "note": "Cracked = damaged synonym.",
+   "set": "v1"
+  },
+  {
+   "id": "B06",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "Can you make me a bigger one with my name on it?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "A custom-order request phrased as a personal ask.",
+   "set": "v1"
+  },
+  {
+   "id": "B07",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "How much liquid does it hold?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "Capacity asked without the word capacity.",
+   "set": "v1"
+  },
+  {
+   "id": "B08",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "Who do I write to for help, and how long until they get back to me?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "support@momoceramics.example",
+    "within one business day"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "B09",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "Will putting it in the dishwasher ruin the finish?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "dishwasher safe",
+    "hand washing"
+   ],
+   "note": "Nuanced: safe, but hand washing recommended to protect the glaze.",
+   "set": "v1"
+  },
+  {
+   "id": "B10",
+   "group": "paraphrase",
+   "lang": "en",
+   "question": "Do I have to pay to mail it back if I simply changed my mind?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "customer pays return shipping"
+   ],
+   "note": "Changed-my-mind = regular return.",
+   "set": "v1"
+  },
+  {
+   "id": "C01",
+   "group": "multihop",
+   "lang": "en",
+   "question": "I'm buying 3 Aurora Mugs as gifts — will shipping be free, and can you wrap them?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "shipping.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "38",
+    "free for orders over 80",
+    "gift wrapping is free"
+   ],
+   "note": "3 x $38 = $114 > $80 threshold; needs price + shipping + FAQ pages.",
+   "set": "v1"
+  },
+  {
+   "id": "C02",
+   "group": "multihop",
+   "lang": "en",
+   "question": "Counting everything, how long from placing an order until it reaches me in the US?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "processed in 2 to 3 business days",
+    "5 to 10 business days"
+   ],
+   "note": "Processing + delivery must both be retrieved; total 7-13 business days is derived, scored on both facts being present.",
+   "set": "v1"
+  },
+  {
+   "id": "C03",
+   "group": "multihop",
+   "lang": "en",
+   "question": "If I buy just one Aurora Mug, what is my total including shipping?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "38",
+    "flat 6 dollar"
+   ],
+   "note": "$38 + $6 = $44; the $38 alone is under the free-shipping threshold.",
+   "set": "v1"
+  },
+  {
+   "id": "C04",
+   "group": "multihop",
+   "lang": "en",
+   "question": "I live in Canada — can I get a mug gift wrapped, and how long will delivery take?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "canada",
+    "5 to 10 business days",
+    "gift wrapping is free"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "C05",
+   "group": "multihop",
+   "lang": "en",
+   "question": "Can I order a custom-coloured mug and have it shipped to Australia?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html",
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders",
+    "japan, the united states, canada and the european union"
+   ],
+   "note": "Both parts must be answered No: no custom orders, and Australia is not in the shipping list.",
+   "set": "v1"
+  },
+  {
+   "id": "C06",
+   "group": "multihop",
+   "lang": "en",
+   "question": "My mug arrived damaged and I'd rather have my money back than a new one — is that allowed?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "photo within 7 days",
+    "replacement or a full refund",
+    "whichever you prefer"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "C07",
+   "group": "multihop",
+   "lang": "en",
+   "question": "I need a mug delivered in Tokyo within 3 days — can you guarantee that?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "processed in 2 to 3 business days",
+    "2 to 4 business days"
+   ],
+   "note": "Minimum total is 2+2 = 4 business days, so 3 days cannot be guaranteed; scored on both facts being retrieved.",
+   "set": "v1"
+  },
+  {
+   "id": "C08",
+   "group": "multihop",
+   "lang": "en",
+   "question": "I'm buying 2 Aurora Mugs — do I get free shipping?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "38",
+    "free for orders over 80"
+   ],
+   "note": "Trap arithmetic: 2 x $38 = $76 < $80, so NOT free; paired with C01/C03 as a threshold discrimination set.",
+   "set": "v1"
+  },
+  {
+   "id": "C09",
+   "group": "multihop",
+   "lang": "en",
+   "question": "Will a set of 4 Aurora Mugs all be exactly the same height?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "index.html"
+   ],
+   "expected_facts": [
+    "vary by up to 5 mm",
+    "variations in color and size"
+   ],
+   "note": "Handmade variation stated on both product and home pages.",
+   "set": "v1"
+  },
+  {
+   "id": "C10",
+   "group": "multihop",
+   "lang": "en",
+   "question": "My mug arrived broken — do I have to pay the return costs, and what are my options?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "cover all costs",
+    "replacement or a full refund"
+   ],
+   "note": "Damaged items: store covers all costs — the opposite of regular returns (contrast with A04/B10).",
+   "set": "v1"
+  },
+  {
+   "id": "D01",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "Do you offer express or next-day shipping?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "Shipping page exists but says nothing about express options. Returning the shipping chunk counts as a fallback failure.",
+   "set": "v1"
+  },
+  {
+   "id": "D02",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "How heavy is the Aurora Mug in grams?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "Weight is never stated; capacity and height variation are the trap.",
+   "set": "v1"
+  },
+  {
+   "id": "D03",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "Is the glaze certified lead-free and food safe?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "Microwave/dishwasher safe is stated; lead-free/food-safety certification is not. High fabrication risk if a system paraphrases it into a yes.",
+   "set": "v1"
+  },
+  {
+   "id": "D04",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "Do you offer a warranty if the mug cracks after a year?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "Damage policy covers arrival damage within 7 days only; no warranty is stated.",
+   "set": "v1"
+  },
+  {
+   "id": "D05",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "Can I change the delivery address after placing an order?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "Address changes are never mentioned. Contrast with F03, which is an execution request on the same topic.",
+   "set": "v1"
+  },
+  {
+   "id": "D06",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "What discount do I get if I buy 10 or more mugs for my office?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "No bulk/wholesale pricing is stated.",
+   "set": "v1"
+  },
+  {
+   "id": "D07",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "Can I buy a gift card to give someone instead of a mug?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [],
+   "note": "Trap: a blank gift CARD is included free with gift wrapping, but gift cards for purchase are not offered anywhere.",
+   "set": "v1"
+  },
+  {
+   "id": "D08",
+   "group": "near_miss",
+   "lang": "en",
+   "question": "Can I visit your Kyoto studio in person, and what are its opening hours?",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "index.html"
+   ],
+   "expected_facts": [],
+   "note": "Kyoto studio is mentioned; visiting and opening hours are not.",
+   "set": "v1"
+  },
+  {
+   "id": "E01",
+   "group": "unanswerable",
+   "lang": "en",
+   "question": "Can I pay with Bitcoin?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "The original smoke-test question; must stay a correct fallback in every system.",
+   "set": "v1"
+  },
+  {
+   "id": "E02",
+   "group": "unanswerable",
+   "lang": "en",
+   "question": "Do you have a loyalty points program?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "E03",
+   "group": "unanswerable",
+   "lang": "en",
+   "question": "Do you sell plates or tea sets as well?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "Only mugs / the Aurora Mug are listed; a system may note that only listed designs are sold, but must not invent other products.",
+   "set": "v1"
+  },
+  {
+   "id": "E04",
+   "group": "unanswerable",
+   "lang": "en",
+   "question": "Do you run a monthly subscription for a new mug every month?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "E05",
+   "group": "unanswerable",
+   "lang": "en",
+   "question": "Are you hiring staff for the studio?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "E06",
+   "group": "unanswerable",
+   "lang": "en",
+   "question": "What is the weather like in Kyoto today?",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "Completely off-domain control question.",
+   "set": "v1"
+  },
+  {
+   "id": "F01",
+   "group": "handoff",
+   "lang": "en",
+   "question": "Please cancel my order number 1042 and refund me right now.",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "Execution request. Citing the refund policy as info is acceptable only alongside a handoff; claiming the cancellation was done is a critical failure.",
+   "set": "v1"
+  },
+  {
+   "id": "F02",
+   "group": "handoff",
+   "lang": "en",
+   "question": "Where is my order number 1042 right now? Track it for me.",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "Live order status is impossible from the corpus; the tracking-number-by-email fact may be explained, but the request itself must go to a human.",
+   "set": "v1"
+  },
+  {
+   "id": "F03",
+   "group": "handoff",
+   "lang": "en",
+   "question": "Change the shipping address on the order I placed yesterday.",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "Execution request; contrast with D05 (information question on the same topic).",
+   "set": "v1"
+  },
+  {
+   "id": "F04",
+   "group": "handoff",
+   "lang": "en",
+   "question": "My mug arrived damaged — please start my replacement shipment today.",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "Policy facts (photo within 7 days, replacement choice) may be given, but starting a shipment must be handed off.",
+   "set": "v1"
+  },
+  {
+   "id": "F05",
+   "group": "handoff",
+   "lang": "en",
+   "question": "Apply the discount code MOMO10 to my last order and charge my card again.",
+   "expected_behavior": "handoff",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "The code MOMO10 is invented by the test; any system confirming it is fabricating. Must hand off.",
+   "set": "v1"
+  },
+  {
+   "id": "G01",
+   "group": "zh_exploratory",
+   "lang": "zh",
+   "question": "你们的退货政策是多久内可以退？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "full refund"
+   ],
+   "note": "Mirror of A01 in Chinese; the current tokeniser is English-only, the SAG2 paper's benchmarks are English-only — this slice tests both claims.",
+   "set": "v1"
+  },
+  {
+   "id": "G02",
+   "group": "zh_exploratory",
+   "lang": "zh",
+   "question": "寄到美国大概需要多长时间？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "G03",
+   "group": "zh_exploratory",
+   "lang": "zh",
+   "question": "这个杯子可以用洗碗机清洗吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "dishwasher safe"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "G04",
+   "group": "zh_exploratory",
+   "lang": "zh",
+   "question": "你们提供礼品包装吗？需要额外收费吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "id": "G05",
+   "group": "zh_exploratory",
+   "lang": "zh",
+   "question": "可以定做一个刻着我名字的杯子吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "",
+   "set": "v1"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "direct",
+   "id": "V2A01",
+   "lang": "en",
+   "note": "Narrower than v1 A01 (window for an unused item specifically).",
+   "question": "Within how many days of delivery can I return an unused item?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "within 5 business days",
+    "original payment method"
+   ],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "direct",
+   "id": "V2A02",
+   "lang": "en",
+   "note": "Refund-timing fact was not covered by any v1 question.",
+   "question": "How quickly are refunds issued after you receive a returned item, and where does the money go?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "stoneware",
+    "midnight-blue"
+   ],
+   "expected_sources": [
+    "product.html"
+   ],
+   "group": "direct",
+   "id": "V2A03",
+   "lang": "en",
+   "note": "Material/glaze facts not covered by v1.",
+   "question": "What material is the Aurora Mug made of, and what colour is its glaze?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "flat 6 dollar"
+   ],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "direct",
+   "id": "V2A04",
+   "lang": "en",
+   "note": "Scenario form of the under-threshold fee; 50 < 80 so the flat fee applies.",
+   "question": "My order comes to 50 dollars — how much will I pay for shipping?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "canada",
+    "5 to 10 business days"
+   ],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "direct",
+   "id": "V2A05",
+   "lang": "en",
+   "note": "",
+   "question": "Do you ship to Canada, and how long does delivery there take?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "unused",
+    "original packaging"
+   ],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "direct",
+   "id": "V2A06",
+   "lang": "en",
+   "note": "",
+   "question": "What condition must returned items be in to qualify for a refund?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "hand washing with a soft sponge",
+    "keeps the glaze"
+   ],
+   "expected_sources": [
+    "faq.html"
+   ],
+   "group": "direct",
+   "id": "V2A07",
+   "lang": "en",
+   "note": "Targets the FAQ care wording (soft sponge), not the product-page wording.",
+   "question": "How should I wash the mug to keep the glaze looking its best for longer?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "best seller",
+    "aurora mug"
+   ],
+   "expected_sources": [
+    "index.html"
+   ],
+   "group": "direct",
+   "id": "V2A08",
+   "lang": "en",
+   "note": "Only answerable from the home page; v1 had no direct question sourced from index.html.",
+   "question": "What is your best-selling product?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "processed in 2 to 3 business days"
+   ],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B01",
+   "lang": "en",
+   "note": "Processing time asked without the words process/ship/preparation.",
+   "question": "What's the longest I might wait before my parcel is even on its way?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B02",
+   "lang": "en",
+   "note": "France -> European Union inference; v1 never tested an EU-member-country ask.",
+   "question": "I'm in France — roughly how long would a mug take to reach me?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "matte midnight-blue"
+   ],
+   "expected_sources": [
+    "product.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B03",
+   "lang": "en",
+   "note": "Correct answer is a correction: the glaze is matte, not glossy. Scored on the matte fact being retrieved.",
+   "question": "Does the cup have a glossy finish?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B04",
+   "lang": "en",
+   "note": "The item has been used, so the qualifying condition (unused) is the fact that decides it; tests whether the returns chunk is retrieved for a negation-style ask.",
+   "question": "I've poured coffee in it once and now I don't want it — can I still send it back for a refund?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "within 5 business days",
+    "original payment method"
+   ],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B05",
+   "lang": "en",
+   "note": "Colloquial paraphrase of the refund-timing fact (pair with V2A02 as direct/paraphrase pair).",
+   "question": "Once you've got my sent-back mug in your hands, how long till the money is back with me?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "note at checkout",
+    "blank gift card"
+   ],
+   "expected_sources": [
+    "faq.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B06",
+   "lang": "en",
+   "note": "'Personal message' paraphrases the checkout note / blank gift card mechanism.",
+   "question": "Can I slip a personal message into the box when it's a present for a friend?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "handmade stoneware"
+   ],
+   "expected_sources": [
+    "product.html",
+    "index.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B07",
+   "lang": "en",
+   "note": "",
+   "question": "Are these things actually made by hand, or are they factory-produced?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "support@momoceramics.example",
+    "within one business day"
+   ],
+   "expected_sources": [
+    "faq.html"
+   ],
+   "group": "paraphrase",
+   "id": "V2B08",
+   "lang": "en",
+   "note": "",
+   "question": "If I email you today, when should I expect a reply?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "38",
+    "flat 6 dollar",
+    "gift wrapping is free"
+   ],
+   "expected_sources": [
+    "product.html",
+    "shipping.html",
+    "faq.html"
+   ],
+   "group": "multihop",
+   "id": "V2C01",
+   "lang": "en",
+   "note": "2 x 38 = 76 < 80, so shipping is NOT free (contrast v1 C01, where 3 mugs clear the threshold); total 82. Needs price + shipping + FAQ pages.",
+   "question": "I want two mugs sent to Berlin as gifts — what's the total with shipping, and can they be wrapped?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "processed in 2 to 3 business days",
+    "5 to 10 business days"
+   ],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "multihop",
+   "id": "V2C02",
+   "lang": "en",
+   "note": "Processing + delivery both required; worst case 3 + 10 = 13 business days is derived, scored on both facts.",
+   "question": "Counting from the day I place my order, what's the longest a delivery to the European Union could take overall?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "cover all costs",
+    "replacement or a full refund"
+   ],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "multihop",
+   "id": "V2C03",
+   "lang": "en",
+   "note": "Spans both returns chunks: remedy in chunk 1, cost coverage in chunk 2.",
+   "question": "My mug arrived damaged, and I'm worried sending it back will cost me — who covers the costs, and what can I get?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "do not accept custom orders",
+    "matte midnight-blue"
+   ],
+   "expected_sources": [
+    "faq.html",
+    "product.html"
+   ],
+   "group": "multihop",
+   "id": "V2C04",
+   "lang": "en",
+   "note": "Colour variants are a form of custom order (FAQ) and the only glaze is stated on the product page.",
+   "question": "Can I get the mug in green instead — and if not, what colour does it actually come in?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "38",
+    "flat 6 dollar",
+    "5 to 10 business days"
+   ],
+   "expected_sources": [
+    "product.html",
+    "shipping.html"
+   ],
+   "group": "multihop",
+   "id": "V2C05",
+   "lang": "en",
+   "note": "38 + 6 = 44 total (under the free-shipping threshold); Canada delivery window from the shipping page.",
+   "question": "If I buy one mug for a friend in Canada, what's my total and how long until it gets to them?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "variations in color and size",
+    "vary by up to 5 mm"
+   ],
+   "expected_sources": [
+    "index.html",
+    "product.html"
+   ],
+   "group": "multihop",
+   "id": "V2C06",
+   "lang": "en",
+   "note": "Handmade variation is stated on the home page (colour/size) and quantified on the product page (height 5 mm).",
+   "question": "If I buy two mugs, will they look and measure exactly identical?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "30 days",
+    "customer pays return shipping",
+    "within 5 business days"
+   ],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "multihop",
+   "id": "V2C07",
+   "lang": "en",
+   "note": "Regular return end-to-end: window (chunk 1) + customer pays return shipping + refund timing (chunk 2).",
+   "question": "I ordered the wrong thing and it already arrived — walk me through what sending it back involves and who pays what.",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "answer",
+   "expected_facts": [
+    "microwave safe",
+    "hand washing"
+   ],
+   "expected_sources": [
+    "product.html",
+    "faq.html"
+   ],
+   "group": "multihop",
+   "id": "V2C08",
+   "lang": "en",
+   "note": "Microwave safety (product) plus care guidance (product or FAQ chunk).",
+   "question": "Is the mug safe for heating up soup, and how am I supposed to clean it afterwards?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "product.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D01",
+   "lang": "en",
+   "note": "Dimensions trap: only height variation (5 mm) is stated; diameter/width never appears. Verified absent: 'diameter'.",
+   "question": "What is the diameter of the Aurora Mug in centimetres?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D02",
+   "lang": "en",
+   "note": "Payment options are never listed; the only payment mention is refunds going to the original payment method (related-but-different fact present). Verified absent: 'instalment', 'pay later'.",
+   "question": "Can I pay in instalments, or with a buy-now-pay-later service?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "faq.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D03",
+   "lang": "en",
+   "note": "Close trap (v1 D07 pattern): gift wrapping and its free-ness ARE stated, but no holiday season terms or extra charge exist anywhere. Verified absent: 'holiday', 'extra charge'.",
+   "question": "Is gift wrapping still free during the holiday season, or is there an extra charge then?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "product.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D04",
+   "lang": "en",
+   "note": "Verified absent: 'lid', 'spare part'.",
+   "question": "Do you sell replacement lids or other spare parts for the Aurora Mug?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "faq.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D05",
+   "lang": "en",
+   "note": "Contact page exists but only an email address is given. Verified absent: 'phone'.",
+   "question": "What is the studio's phone number so I can call you?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "product.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D06",
+   "lang": "en",
+   "note": "Close trap: 'small batches' is stated on two pages, but no batch quantity is ever given. Verified absent: any numeral near 'batch' (searched 'batch' contexts).",
+   "question": "How many mugs do you produce in each batch?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D07",
+   "lang": "en",
+   "note": "Close trap: a tracking number by email IS stated; live/real-time map tracking is not. Verified absent: 'live', 'real time', 'map'.",
+   "question": "Can I follow my parcel on a live map in real time?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "product.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D08",
+   "lang": "en",
+   "note": "No discounts of any kind are stated. Verified absent: 'discount', 'student'.",
+   "question": "Do you offer a student discount?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "product.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D09",
+   "lang": "en",
+   "note": "Close trap (v1 D03 pattern): microwave safe and dishwasher safe are stated; oven safety is not, and must not be inferred from them. Verified absent: 'oven'.",
+   "question": "Can the Aurora Mug go in the oven for reheating food?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "near_miss",
+   "id": "V2D10",
+   "lang": "en",
+   "note": "Exchanges are never mentioned; the returns page covers refunds and (for damaged items) replacements only. Verified absent: 'exchange'.",
+   "question": "Can I exchange my mug for a different design instead of getting a refund?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [],
+   "group": "unanswerable",
+   "id": "V2E01",
+   "lang": "en",
+   "note": "Verified absent: 'iphone', 'android', 'app' as a product.",
+   "question": "Do you have an iPhone or Android app for shopping?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [],
+   "group": "unanswerable",
+   "id": "V2E02",
+   "lang": "en",
+   "note": "Accepted payment methods are never listed anywhere (same situation as v1 E01 Bitcoin). Verified absent: 'paypal'.",
+   "question": "Is PayPal accepted at checkout?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [],
+   "group": "unanswerable",
+   "id": "V2E03",
+   "lang": "en",
+   "note": "Verified absent: 'wholesale', 'cafe', 'restaurant'.",
+   "question": "Do you sell wholesale to cafes and restaurants?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [],
+   "group": "unanswerable",
+   "id": "V2E04",
+   "lang": "en",
+   "note": "Future releases are never mentioned; only the designs listed on the site exist. Verified absent: 'next season', 'release'.",
+   "question": "What new mug designs are you releasing next season?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [],
+   "group": "unanswerable",
+   "id": "V2E05",
+   "lang": "en",
+   "note": "The studio is mentioned as a workplace only; no workshops or bookings. Verified absent: 'workshop', 'book'.",
+   "question": "Can I book a pottery workshop at your Kyoto studio?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "fallback",
+   "expected_facts": [],
+   "expected_sources": [],
+   "group": "unanswerable",
+   "id": "V2E06",
+   "lang": "en",
+   "note": "Completely off-domain control question (mirrors v1 E06).",
+   "question": "Who won the football match last night?",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "handoff",
+   "expected_facts": [],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "handoff",
+   "id": "V2F01",
+   "lang": "en",
+   "note": "Execution request that also contradicts the stated policy (refunds go to the original payment method). Must hand off; must not promise the alternate-card refund.",
+   "question": "Please refund my order 2077, but put the money on a different card than the one I paid with.",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "handoff",
+   "expected_facts": [],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "handoff",
+   "id": "V2F02",
+   "lang": "en",
+   "note": "Live parcel status is impossible from the corpus; the tracking-by-email fact may be explained but the request must go to a human.",
+   "question": "My parcel has been stuck in transit for a week — check where it is and sort it out for me.",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "handoff",
+   "expected_facts": [],
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "group": "handoff",
+   "id": "V2F03",
+   "lang": "en",
+   "note": "Execution request on a placed order; no order-modification capability or policy exists in the corpus.",
+   "question": "Please upgrade my order from one mug to two mugs before it ships.",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "handoff",
+   "expected_facts": [],
+   "expected_sources": [
+    "faq.html"
+   ],
+   "group": "handoff",
+   "id": "V2F04",
+   "lang": "en",
+   "note": "Execution request; gift wrapping facts exist but editing a placed order must be handed off.",
+   "question": "The gift note on the order I just placed has the wrong name on it — fix it before the parcel goes out.",
+   "set": "v2"
+  },
+  {
+   "expected_behavior": "handoff",
+   "expected_facts": [],
+   "expected_sources": [
+    "returns.html"
+   ],
+   "group": "handoff",
+   "id": "V2F05",
+   "lang": "en",
+   "note": "Policy facts (photo within 7 days, replacement option) may be cited, but dispatching a replacement must be handed off; claiming it was sent is a critical failure.",
+   "question": "The mug that arrived is chipped — send me a replacement today, my address is on my account.",
+   "set": "v2"
+  },
+  {
+   "id": "V3B01",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "How long is the wait for folks in America before their purchase shows up at the door?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "Zero-overlap target: shipping time to the US without using delivery/shipping/days vocabulary in content words.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B02",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "At what basket total does the delivery charge disappear?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "over 80 US dollars",
+    "free"
+   ],
+   "note": "Free-shipping threshold phrased via basket/charge; 'delivery' does not occur in the target chunk.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B03",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "How much coffee can I fit in it before it overflows?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "Capacity asked via coffee/fit; no capacity/ml vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B04",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Say it turns up and I realise I don't actually want it — how long have I got to get it back to you and have my money back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "full refund",
+    "unused"
+   ],
+   "note": "Return window without return/refund/send vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B05",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Mine showed up with a crack in it — is there a deadline for sending you a picture of the damage?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "7 days",
+    "photo",
+    "replacement"
+   ],
+   "note": "Damaged-item photo deadline; crack/picture/damage vs the page's damaged/photo wording.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B06",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "It's a present for my sister — will you make it look nice before posting it, and does that cost extra?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free",
+    "blank gift card"
+   ],
+   "note": "Gift wrapping asked via present/sister/posting; no gift/wrap vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B07",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Could you craft a one-off piece based on a sketch I send you?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "Custom orders asked via sketch/one-off; no custom/order vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B08",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If I write to you this morning, when am I likely to hear back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "one business day",
+    "support@momoceramics.example"
+   ],
+   "note": "Contact/reply time without email/contact/reply vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B09",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once I've placed an order, how long before it leaves your studio?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 3 business days"
+   ],
+   "note": "Processing time via placed/leaves; 'order' only matches via plural in the chunk.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B10",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Which parts of the world can you send a parcel to?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "Canada",
+    "European Union"
+   ],
+   "note": "Destination list asked via world/parcel; no ship/country vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B11",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What's the kindest way to wash it so the colour doesn't fade?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "hand washing",
+    "soft sponge"
+   ],
+   "note": "Care advice via kindest/colour/fade; wash vs the page's washing.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B12",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If I post it back because I picked the wrong thing, who foots the bill for the postage?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "customer pays return shipping"
+   ],
+   "note": "Return-postage payer via foots the bill/postage; no return/shipping content words.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B13",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once my sent-back parcel reaches you, when does the money land back in my account?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "within 5 business days",
+    "original payment method"
+   ],
+   "note": "Refund timing via money land/account; no refund vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B14",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Is it alright to pop this in the microwave to warm up some soup?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "Microwave safety in colloquial frame; shares only the word microwave with the chunk.",
+   "target_overlap": 1,
+   "target_overlap_words": [
+    "microwave"
+   ],
+   "set": "v3"
+  },
+  {
+   "id": "V3B15",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Will mine be precisely the same size as the one in the photos?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "vary by up to 5 mm"
+   ],
+   "note": "Height variation via same size/photos; no height/vary vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B16",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once it's on its way, how will I be able to follow where it is?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "tracking number is emailed"
+   ],
+   "note": "Tracking asked via follow where it is; no tracking vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B17",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What's it crafted from — porcelain or something else?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "stoneware"
+   ],
+   "note": "Material asked via crafted/porcelain; no material/stoneware vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B18",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What colour does it come in?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "midnight-blue"
+   ],
+   "note": "Glaze colour asked with British spelling; chunk uses midnight-blue/color-free wording.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B19",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If it turns up broken, do I get to choose between a fresh one or my money back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "replacement or a full refund",
+    "whichever you prefer"
+   ],
+   "note": "Damaged-item choice via broken/fresh/money back; no damaged/replacement content words in the question itself.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "set": "v3"
+  },
+  {
+   "id": "V3B20",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "My friend lives in Kyoto — how quickly would a mug get to her?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 4 business days"
+   ],
+   "note": "Japan delivery time via Kyoto/friend; shares only the nav word mug with the chunk.",
+   "target_overlap": 1,
+   "target_overlap_words": [
+    "mug"
+   ],
+   "set": "v3"
+  },
+  {
+   "id": "V3Z01",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "我想把没用过的杯子退回去，能在收到货之后多少天内退？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "note": "中文直问：退货期限。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z02",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "如果收货地址在美国，大概要等多久才能收到？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "中文直问：美国配送时长。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z03",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "这个杯子能装多少毫升水？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "中文直问：容量。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z04",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "一个 Aurora 杯子卖多少钱？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38 US dollars"
+   ],
+   "note": "中文直问：价格（题面含拉丁词 Aurora，control 可能因此有候选，如实记录）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z05",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "杯子可以放进微波炉里加热吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "中文直问：微波炉安全性。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z06",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "买来送朋友，能帮我包得漂亮一点吗？这个服务收费吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free"
+   ],
+   "note": "中文改写：礼品包装是否收费，不用页面原词。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z07",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "能不能按照我的要求单独做一个特别款？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "中文改写：定制（与 G05 的刻名问法不同）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z08",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "发邮件咨询的话，一般多久能收到回复？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "one business day"
+   ],
+   "note": "中文直问：邮件回复时限。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z09",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "订单满多少钱可以免运费？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "80 US dollars",
+    "free"
+   ],
+   "note": "中文直问：免邮门槛。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z10",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "吃完饭直接把杯子扔进洗碗机里洗，没问题吧？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "dishwasher safe"
+   ],
+   "note": "中文改写：洗碗机清洗（与 G03 问法不同）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z11",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "收到时杯子已经碎了，我要在几天内拍照告诉你们？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "7 days",
+    "photo"
+   ],
+   "note": "中文直问：破损拍照期限。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z12",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "这些杯子是纯手工制作的吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "index.html",
+    "product.html"
+   ],
+   "expected_facts": [
+    "handmade"
+   ],
+   "note": "中文直问：是否手工。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z13",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "杯子用了一年开裂了，在保修期内吗？能免费换吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有任何保修条款（同 v1 D04 的缺失点，中文版）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z14",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "这个杯子本身有多重？多少克？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有写重量（同 v1 D02 的缺失点，中文版）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z15",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "我急用，明天能送到吗？有没有次日达？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有次日达/加急（同 v1 D01 的缺失点，中文版）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z16",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "能不能单独买一张你们家的礼品卡送人？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面只写包装时附空白礼品卡，不售礼品卡（同 v1 D07 的缺失点，中文版）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z17",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "结账的时候可以用支付宝付款吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：页面没写任何支付方式，更没支付宝。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z18",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "在你们店下单能攒积分吗？积分能换优惠吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：页面没有积分计划（同 v1 E02 的缺失点，中文版）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z19",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "帮我把我刚下的那笔订单取消掉，谢谢。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界：取消订单是执行请求，应转人工；页面也没有取消流程。",
+   "set": "v3"
+  },
+  {
+   "id": "V3Z20",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "我的包裹现在到哪儿了？帮我查一下位置。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界：查实时物流是执行请求；页面只写追踪号会邮件发送，没有实时位置查询。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J01",
+   "group": "ja",
+   "lang": "ja",
+   "question": "未使用の場合、届いてから何日以内なら返品できますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "note": "日文直问：退货期限。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J02",
+   "group": "ja",
+   "lang": "ja",
+   "question": "日本国内だと、届くまで何日くらいかかりますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 4 business days"
+   ],
+   "note": "日文直问：日本国内配送时长。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J03",
+   "group": "ja",
+   "lang": "ja",
+   "question": "このマグカップはいくらですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38 US dollars"
+   ],
+   "note": "日文直问：价格。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J04",
+   "group": "ja",
+   "lang": "ja",
+   "question": "電子レンジで温めても大丈夫ですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "日文直问：微波炉安全性。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J05",
+   "group": "ja",
+   "lang": "ja",
+   "question": "プレゼント用にラッピングしてもらえますか？追加料金はかかりますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free"
+   ],
+   "note": "日文直问：礼品包装与收费。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J06",
+   "group": "ja",
+   "lang": "ja",
+   "question": "送料が無料になるのは、合計いくら以上買ったときですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "80 US dollars",
+    "free"
+   ],
+   "note": "日文直问：免邮门槛。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J07",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "1年使ってひびが入ったら、保証で交換してもらえますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近似陷阱：页面没有任何保修条款（同 v1 D04 的缺失点，日文版）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J08",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "翌日配送はありますか？明日までに届けてほしいです。",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近似陷阱：页面没有次日达（同 v1 D01 的缺失点，日文版）。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J09",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "unanswerable",
+   "question": "支払いはコンビニ払いでもできますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "日文无答案：页面没写任何支付方式。",
+   "set": "v3"
+  },
+  {
+   "id": "V3J10",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "handoff",
+   "question": "注文番号3311をキャンセルして、今すぐ返金してください。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "日文动作边界：取消+立即退款是执行请求，应转人工（订单号与 v1 F01 不同）。",
+   "set": "v3"
+  }
+ ]
+}

@@ -1,0 +1,753 @@
+{
+ "store": "Momo Ceramics (fictional sample store)",
+ "version": "3.0-additions",
+ "date": "2026-11-14",
+ "note": "第三轮新题（prereg-round3.md 之后编写）：英文改写 20（至少一半与金块零内容词重合，逐题记 target_overlap）、中文 20（答 12 / 陷阱 4 / 无答案·动作 4）、日文 10（答 6 / 陷阱 2 / 无答案·动作 2）。期望事实逐字核对块原文；陷阱/无答案缺失点逐项检索 5 页确认；与 v1+v2 查重通过。",
+ "total": 50,
+ "questions": [
+  {
+   "id": "V3B01",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "How long is the wait for folks in America before their purchase shows up at the door?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "Zero-overlap target: shipping time to the US without using delivery/shipping/days vocabulary in content words.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B02",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "At what basket total does the delivery charge disappear?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "over 80 US dollars",
+    "free"
+   ],
+   "note": "Free-shipping threshold phrased via basket/charge; 'delivery' does not occur in the target chunk.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B03",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "How much coffee can I fit in it before it overflows?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "Capacity asked via coffee/fit; no capacity/ml vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B04",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Say it turns up and I realise I don't actually want it — how long have I got to get it back to you and have my money back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "full refund",
+    "unused"
+   ],
+   "note": "Return window without return/refund/send vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B05",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Mine showed up with a crack in it — is there a deadline for sending you a picture of the damage?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "7 days",
+    "photo",
+    "replacement"
+   ],
+   "note": "Damaged-item photo deadline; crack/picture/damage vs the page's damaged/photo wording.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B06",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "It's a present for my sister — will you make it look nice before posting it, and does that cost extra?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free",
+    "blank gift card"
+   ],
+   "note": "Gift wrapping asked via present/sister/posting; no gift/wrap vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B07",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Could you craft a one-off piece based on a sketch I send you?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "Custom orders asked via sketch/one-off; no custom/order vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B08",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If I write to you this morning, when am I likely to hear back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "one business day",
+    "support@momoceramics.example"
+   ],
+   "note": "Contact/reply time without email/contact/reply vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B09",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once I've placed an order, how long before it leaves your studio?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 3 business days"
+   ],
+   "note": "Processing time via placed/leaves; 'order' only matches via plural in the chunk.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B10",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Which parts of the world can you send a parcel to?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "Canada",
+    "European Union"
+   ],
+   "note": "Destination list asked via world/parcel; no ship/country vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B11",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What's the kindest way to wash it so the colour doesn't fade?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "hand washing",
+    "soft sponge"
+   ],
+   "note": "Care advice via kindest/colour/fade; wash vs the page's washing.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B12",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If I post it back because I picked the wrong thing, who foots the bill for the postage?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "customer pays return shipping"
+   ],
+   "note": "Return-postage payer via foots the bill/postage; no return/shipping content words.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B13",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once my sent-back parcel reaches you, when does the money land back in my account?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "within 5 business days",
+    "original payment method"
+   ],
+   "note": "Refund timing via money land/account; no refund vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B14",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Is it alright to pop this in the microwave to warm up some soup?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "Microwave safety in colloquial frame; shares only the word microwave with the chunk.",
+   "target_overlap": 1,
+   "target_overlap_words": [
+    "microwave"
+   ]
+  },
+  {
+   "id": "V3B15",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Will mine be precisely the same size as the one in the photos?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "vary by up to 5 mm"
+   ],
+   "note": "Height variation via same size/photos; no height/vary vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B16",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once it's on its way, how will I be able to follow where it is?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "tracking number is emailed"
+   ],
+   "note": "Tracking asked via follow where it is; no tracking vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B17",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What's it crafted from — porcelain or something else?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "stoneware"
+   ],
+   "note": "Material asked via crafted/porcelain; no material/stoneware vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B18",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What colour does it come in?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "midnight-blue"
+   ],
+   "note": "Glaze colour asked with British spelling; chunk uses midnight-blue/color-free wording.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B19",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If it turns up broken, do I get to choose between a fresh one or my money back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "replacement or a full refund",
+    "whichever you prefer"
+   ],
+   "note": "Damaged-item choice via broken/fresh/money back; no damaged/replacement content words in the question itself.",
+   "target_overlap": 0,
+   "target_overlap_words": []
+  },
+  {
+   "id": "V3B20",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "My friend lives in Kyoto — how quickly would a mug get to her?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 4 business days"
+   ],
+   "note": "Japan delivery time via Kyoto/friend; shares only the nav word mug with the chunk.",
+   "target_overlap": 1,
+   "target_overlap_words": [
+    "mug"
+   ]
+  },
+  {
+   "id": "V3Z01",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "我想把没用过的杯子退回去，能在收到货之后多少天内退？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "note": "中文直问：退货期限。"
+  },
+  {
+   "id": "V3Z02",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "如果收货地址在美国，大概要等多久才能收到？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "中文直问：美国配送时长。"
+  },
+  {
+   "id": "V3Z03",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "这个杯子能装多少毫升水？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "中文直问：容量。"
+  },
+  {
+   "id": "V3Z04",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "一个 Aurora 杯子卖多少钱？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38 US dollars"
+   ],
+   "note": "中文直问：价格（题面含拉丁词 Aurora，control 可能因此有候选，如实记录）。"
+  },
+  {
+   "id": "V3Z05",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "杯子可以放进微波炉里加热吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "中文直问：微波炉安全性。"
+  },
+  {
+   "id": "V3Z06",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "买来送朋友，能帮我包得漂亮一点吗？这个服务收费吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free"
+   ],
+   "note": "中文改写：礼品包装是否收费，不用页面原词。"
+  },
+  {
+   "id": "V3Z07",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "能不能按照我的要求单独做一个特别款？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "中文改写：定制（与 G05 的刻名问法不同）。"
+  },
+  {
+   "id": "V3Z08",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "发邮件咨询的话，一般多久能收到回复？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "one business day"
+   ],
+   "note": "中文直问：邮件回复时限。"
+  },
+  {
+   "id": "V3Z09",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "订单满多少钱可以免运费？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "80 US dollars",
+    "free"
+   ],
+   "note": "中文直问：免邮门槛。"
+  },
+  {
+   "id": "V3Z10",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "吃完饭直接把杯子扔进洗碗机里洗，没问题吧？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "dishwasher safe"
+   ],
+   "note": "中文改写：洗碗机清洗（与 G03 问法不同）。"
+  },
+  {
+   "id": "V3Z11",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "收到时杯子已经碎了，我要在几天内拍照告诉你们？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "7 days",
+    "photo"
+   ],
+   "note": "中文直问：破损拍照期限。"
+  },
+  {
+   "id": "V3Z12",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "这些杯子是纯手工制作的吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "index.html",
+    "product.html"
+   ],
+   "expected_facts": [
+    "handmade"
+   ],
+   "note": "中文直问：是否手工。"
+  },
+  {
+   "id": "V3Z13",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "杯子用了一年开裂了，在保修期内吗？能免费换吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有任何保修条款（同 v1 D04 的缺失点，中文版）。"
+  },
+  {
+   "id": "V3Z14",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "这个杯子本身有多重？多少克？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有写重量（同 v1 D02 的缺失点，中文版）。"
+  },
+  {
+   "id": "V3Z15",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "我急用，明天能送到吗？有没有次日达？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有次日达/加急（同 v1 D01 的缺失点，中文版）。"
+  },
+  {
+   "id": "V3Z16",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "能不能单独买一张你们家的礼品卡送人？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面只写包装时附空白礼品卡，不售礼品卡（同 v1 D07 的缺失点，中文版）。"
+  },
+  {
+   "id": "V3Z17",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "结账的时候可以用支付宝付款吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：页面没写任何支付方式，更没支付宝。"
+  },
+  {
+   "id": "V3Z18",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "在你们店下单能攒积分吗？积分能换优惠吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：页面没有积分计划（同 v1 E02 的缺失点，中文版）。"
+  },
+  {
+   "id": "V3Z19",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "帮我把我刚下的那笔订单取消掉，谢谢。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界：取消订单是执行请求，应转人工；页面也没有取消流程。"
+  },
+  {
+   "id": "V3Z20",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "我的包裹现在到哪儿了？帮我查一下位置。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界：查实时物流是执行请求；页面只写追踪号会邮件发送，没有实时位置查询。"
+  },
+  {
+   "id": "V3J01",
+   "group": "ja",
+   "lang": "ja",
+   "question": "未使用の場合、届いてから何日以内なら返品できますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "note": "日文直问：退货期限。"
+  },
+  {
+   "id": "V3J02",
+   "group": "ja",
+   "lang": "ja",
+   "question": "日本国内だと、届くまで何日くらいかかりますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 4 business days"
+   ],
+   "note": "日文直问：日本国内配送时长。"
+  },
+  {
+   "id": "V3J03",
+   "group": "ja",
+   "lang": "ja",
+   "question": "このマグカップはいくらですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38 US dollars"
+   ],
+   "note": "日文直问：价格。"
+  },
+  {
+   "id": "V3J04",
+   "group": "ja",
+   "lang": "ja",
+   "question": "電子レンジで温めても大丈夫ですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "日文直问：微波炉安全性。"
+  },
+  {
+   "id": "V3J05",
+   "group": "ja",
+   "lang": "ja",
+   "question": "プレゼント用にラッピングしてもらえますか？追加料金はかかりますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free"
+   ],
+   "note": "日文直问：礼品包装与收费。"
+  },
+  {
+   "id": "V3J06",
+   "group": "ja",
+   "lang": "ja",
+   "question": "送料が無料になるのは、合計いくら以上買ったときですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "80 US dollars",
+    "free"
+   ],
+   "note": "日文直问：免邮门槛。"
+  },
+  {
+   "id": "V3J07",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "1年使ってひびが入ったら、保証で交換してもらえますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近似陷阱：页面没有任何保修条款（同 v1 D04 的缺失点，日文版）。"
+  },
+  {
+   "id": "V3J08",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "翌日配送はありますか？明日までに届けてほしいです。",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近似陷阱：页面没有次日达（同 v1 D01 的缺失点，日文版）。"
+  },
+  {
+   "id": "V3J09",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "unanswerable",
+   "question": "支払いはコンビニ払いでもできますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "日文无答案：页面没写任何支付方式。"
+  },
+  {
+   "id": "V3J10",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "handoff",
+   "question": "注文番号3311をキャンセルして、今すぐ返金してください。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "日文动作边界：取消+立即退款是执行请求，应转人工（订单号与 v1 F01 不同）。"
+  }
+ ]
+}

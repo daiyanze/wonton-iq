@@ -1,0 +1,3046 @@
+{
+ "meta": {
+  "date": "2026-11-14",
+  "prereg": "prereg-round3.md",
+  "arm": "S2-cal control (BM25 pool, JEV accept >= 0.8)",
+  "model_alias": "jev-latest",
+  "model_version": "jev-1.14.0",
+  "new_set_calls": 19,
+  "new_set_input_tokens": 18287,
+  "new_set_cost_per_question_usd": 1.5e-05,
+  "new_set_latency_p50_ms": 0,
+  "jev_call_p50_ms": 409,
+  "jev_retries": 0
+ },
+ "rows_new": [
+  {
+   "id": "V3B01",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "How long is the wait for folks in America before their purchase shows up at the door?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "Zero-overlap target: shipping time to the US without using delivery/shipping/days vocabulary in content words.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.635,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 859.5,
+   "service_s": 0.859,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 4,
+    "probs": {
+     "9": 0.03,
+     "7": 0.02,
+     "8": 0.05,
+     "4": 0.05
+    },
+    "selected": [],
+    "noul_max": 0.05,
+    "calls": 1,
+    "input_tokens": 1038,
+    "output_tokens": 76
+   },
+   "pool": {
+    "size": 4,
+    "ids": [
+     "9",
+     "7",
+     "8",
+     "4"
+    ],
+    "bm25_ids": [
+     "9",
+     "7",
+     "8",
+     "4"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "2"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 4.6,
+    "jev": 854.8
+   }
+  },
+  {
+   "id": "V3B02",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "At what basket total does the delivery charge disappear?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "over 80 US dollars",
+    "free"
+   ],
+   "note": "Free-shipping threshold phrased via basket/charge; 'delivery' does not occur in the target chunk.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "answer",
+   "score": -2.792,
+   "sources": [
+    "shipping.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+   "raw_sources": [
+    "shipping.html"
+   ],
+   "facts_found": [
+    "over 80 US dollars",
+    "free"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "Shipping is free for orders over 80 US dollars; otherwise a flat 6 dollar shipping fee applies. A tracking number is emailed to you when your order ships.",
+   "latency_ms": 901.9,
+   "service_s": 0.902,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 9,
+    "probs": {
+     "2": 0.04,
+     "8": 0.04,
+     "9": 0.02,
+     "1": 0.03,
+     "4": 0.03,
+     "3": 0.98,
+     "5": 0.03,
+     "0": 0.04,
+     "6": 0.06
+    },
+    "selected": [
+     "3"
+    ],
+    "noul_max": 0.98,
+    "calls": 1,
+    "input_tokens": 2017,
+    "output_tokens": 166
+   },
+   "pool": {
+    "size": 9,
+    "ids": [
+     "2",
+     "8",
+     "9",
+     "1",
+     "4",
+     "3",
+     "5",
+     "0",
+     "6"
+    ],
+    "bm25_ids": [
+     "2",
+     "8",
+     "9",
+     "1",
+     "4",
+     "3",
+     "5",
+     "0",
+     "6"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "3",
+     "8"
+    ],
+    "gold_in_pool": [
+     "3",
+     "8"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 1.9,
+    "jev": 899.9
+   }
+  },
+  {
+   "id": "V3B03",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "How much coffee can I fit in it before it overflows?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "Capacity asked via coffee/fit; no capacity/ml vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -1.318,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 1047.5,
+   "service_s": 1.047,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 2,
+    "probs": {
+     "9": 0.03,
+     "8": 0.03
+    },
+    "selected": [],
+    "noul_max": 0.03,
+    "calls": 1,
+    "input_tokens": 671,
+    "output_tokens": 40
+   },
+   "pool": {
+    "size": 2,
+    "ids": [
+     "9",
+     "8"
+    ],
+    "bm25_ids": [
+     "9",
+     "8"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 5.5,
+    "jev": 1042.0
+   }
+  },
+  {
+   "id": "V3B04",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Say it turns up and I realise I don't actually want it — how long have I got to get it back to you and have my money back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "full refund",
+    "unused"
+   ],
+   "note": "Return window without return/refund/send vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.536,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 842.8,
+   "service_s": 0.843,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 3,
+    "probs": {
+     "7": 0.03,
+     "9": 0.05,
+     "8": 0.05
+    },
+    "selected": [],
+    "noul_max": 0.05,
+    "calls": 1,
+    "input_tokens": 841,
+    "output_tokens": 58
+   },
+   "pool": {
+    "size": 3,
+    "ids": [
+     "7",
+     "9",
+     "8"
+    ],
+    "bm25_ids": [
+     "7",
+     "9",
+     "8"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "4"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 2.4,
+    "jev": 840.4
+   }
+  },
+  {
+   "id": "V3B05",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Mine showed up with a crack in it — is there a deadline for sending you a picture of the damage?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "7 days",
+    "photo",
+    "replacement"
+   ],
+   "note": "Damaged-item photo deadline; crack/picture/damage vs the page's damaged/photo wording.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.536,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 454.0,
+   "service_s": 0.454,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 1,
+    "probs": {
+     "7": 0.03
+    },
+    "selected": [],
+    "noul_max": 0.03,
+    "calls": 1,
+    "input_tokens": 436,
+    "output_tokens": 22
+   },
+   "pool": {
+    "size": 1,
+    "ids": [
+     "7"
+    ],
+    "bm25_ids": [
+     "7"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "4"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 453.7
+   }
+  },
+  {
+   "id": "V3B06",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "It's a present for my sister — will you make it look nice before posting it, and does that cost extra?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free",
+    "blank gift card"
+   ],
+   "note": "Gift wrapping asked via present/sister/posting; no gift/wrap vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "answer",
+   "score": -1.041,
+   "sources": [
+    "faq.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+   "raw_sources": [
+    "faq.html"
+   ],
+   "facts_found": [
+    "gift wrapping is free",
+    "blank gift card"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "Frequently asked questions Home · Aurora Mug · Shipping · Returns · FAQ Frequently asked questions Do you offer gift wrapping? Yes, gift wrapping is free. Add a note at checkout and we will wrap the mug and include a blank gift card. Do you accept custom orders? We do not accept custom orders at this time. Our small studio only produces the designs listed on this site. How do I care for the mug?",
+   "latency_ms": 367.9,
+   "service_s": 0.368,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 2,
+    "probs": {
+     "4": 0.05,
+     "8": 0.96
+    },
+    "selected": [
+     "8"
+    ],
+    "noul_max": 0.96,
+    "calls": 1,
+    "input_tokens": 713,
+    "output_tokens": 40
+   },
+   "pool": {
+    "size": 2,
+    "ids": [
+     "4",
+     "8"
+    ],
+    "bm25_ids": [
+     "4",
+     "8"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "8"
+    ],
+    "gold_in_pool": [
+     "8"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 367.6
+   }
+  },
+  {
+   "id": "V3B07",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Could you craft a one-off piece based on a sketch I send you?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "Custom orders asked via sketch/one-off; no custom/order vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.265,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 346.3,
+   "service_s": 0.346,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 4,
+    "probs": {
+     "4": 0.03,
+     "9": 0.06,
+     "0": 0.1,
+     "6": 0.27
+    },
+    "selected": [],
+    "noul_max": 0.27,
+    "calls": 1,
+    "input_tokens": 1099,
+    "output_tokens": 76
+   },
+   "pool": {
+    "size": 4,
+    "ids": [
+     "4",
+     "9",
+     "0",
+     "6"
+    ],
+    "bm25_ids": [
+     "4",
+     "9",
+     "0",
+     "6"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "8"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.4,
+    "jev": 345.9
+   }
+  },
+  {
+   "id": "V3B08",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If I write to you this morning, when am I likely to hear back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "one business day",
+    "support@momoceramics.example"
+   ],
+   "note": "Contact/reply time without email/contact/reply vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.18,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 503.3,
+   "service_s": 0.503,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 2,
+    "probs": {
+     "3": 0.04,
+     "4": 0.04
+    },
+    "selected": [],
+    "noul_max": 0.04,
+    "calls": 1,
+    "input_tokens": 656,
+    "output_tokens": 40
+   },
+   "pool": {
+    "size": 2,
+    "ids": [
+     "3",
+     "4"
+    ],
+    "bm25_ids": [
+     "3",
+     "4"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "9"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 503.0
+   }
+  },
+  {
+   "id": "V3B09",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once I've placed an order, how long before it leaves your studio?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 3 business days"
+   ],
+   "note": "Processing time via placed/leaves; 'order' only matches via plural in the chunk.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "answer",
+   "score": -4.526,
+   "sources": [
+    "shipping.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+   "raw_sources": [
+    "shipping.html"
+   ],
+   "facts_found": [
+    "2 to 3 business days"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+   "latency_ms": 536.0,
+   "service_s": 0.536,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 6,
+    "probs": {
+     "3": 0.13,
+     "8": 0.06,
+     "9": 0.03,
+     "0": 0.11,
+     "6": 0.4,
+     "2": 0.97
+    },
+    "selected": [
+     "2"
+    ],
+    "noul_max": 0.97,
+    "calls": 1,
+    "input_tokens": 1482,
+    "output_tokens": 112
+   },
+   "pool": {
+    "size": 6,
+    "ids": [
+     "3",
+     "8",
+     "9",
+     "0",
+     "6",
+     "2"
+    ],
+    "bm25_ids": [
+     "3",
+     "8",
+     "9",
+     "0",
+     "6",
+     "2"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "2"
+    ],
+    "gold_in_pool": [
+     "2"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.5,
+    "jev": 535.6
+   }
+  },
+  {
+   "id": "V3B10",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Which parts of the world can you send a parcel to?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "Canada",
+    "European Union"
+   ],
+   "note": "Destination list asked via world/parcel; no ship/country vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.265,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 340.8,
+   "service_s": 0.341,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 1,
+    "probs": {
+     "4": 0.04
+    },
+    "selected": [],
+    "noul_max": 0.04,
+    "calls": 1,
+    "input_tokens": 484,
+    "output_tokens": 22
+   },
+   "pool": {
+    "size": 1,
+    "ids": [
+     "4"
+    ],
+    "bm25_ids": [
+     "4"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "2"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 340.5
+   }
+  },
+  {
+   "id": "V3B11",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What's the kindest way to wash it so the colour doesn't fade?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "hand washing",
+    "soft sponge"
+   ],
+   "note": "Care advice via kindest/colour/fade; wash vs the page's washing.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "answer",
+   "score": -1.647,
+   "sources": [
+    "faq.html",
+    "product.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day. Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+   "raw_sources": [
+    "faq.html",
+    "product.html"
+   ],
+   "facts_found": [
+    "hand washing",
+    "soft sponge"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "The mug is dishwasher safe, but hand washing with a soft sponge keeps the glaze looking best for longer. How can I contact you? Email us at support@momoceramics.example and we reply within one business day. Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+   "latency_ms": 503.2,
+   "service_s": 0.503,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 5,
+    "probs": {
+     "0": 0.08,
+     "1": 0.26,
+     "9": 0.89,
+     "6": 0.86,
+     "8": 0.09
+    },
+    "selected": [
+     "9",
+     "6"
+    ],
+    "noul_max": 0.89,
+    "calls": 1,
+    "input_tokens": 1266,
+    "output_tokens": 94
+   },
+   "pool": {
+    "size": 5,
+    "ids": [
+     "0",
+     "1",
+     "9",
+     "6",
+     "8"
+    ],
+    "bm25_ids": [
+     "0",
+     "1",
+     "9",
+     "6",
+     "8"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6",
+     "9"
+    ],
+    "gold_in_pool": [
+     "6",
+     "9"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.4,
+    "jev": 502.8
+   }
+  },
+  {
+   "id": "V3B12",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If I post it back because I picked the wrong thing, who foots the bill for the postage?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "customer pays return shipping"
+   ],
+   "note": "Return-postage payer via foots the bill/postage; no return/shipping content words.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.536,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 546.0,
+   "service_s": 0.546,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 2,
+    "probs": {
+     "7": 0.02,
+     "4": 0.37
+    },
+    "selected": [],
+    "noul_max": 0.37,
+    "calls": 1,
+    "input_tokens": 645,
+    "output_tokens": 40
+   },
+   "pool": {
+    "size": 2,
+    "ids": [
+     "7",
+     "4"
+    ],
+    "bm25_ids": [
+     "7",
+     "4"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "5"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.4,
+    "jev": 545.6
+   }
+  },
+  {
+   "id": "V3B13",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once my sent-back parcel reaches you, when does the money land back in my account?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "within 5 business days",
+    "original payment method"
+   ],
+   "note": "Refund timing via money land/account; no refund vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.18,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 354.9,
+   "service_s": 0.355,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 1,
+    "probs": {
+     "3": 0.03
+    },
+    "selected": [],
+    "noul_max": 0.03,
+    "calls": 1,
+    "input_tokens": 448,
+    "output_tokens": 22
+   },
+   "pool": {
+    "size": 1,
+    "ids": [
+     "3"
+    ],
+    "bm25_ids": [
+     "3"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "5"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.4,
+    "jev": 354.6
+   }
+  },
+  {
+   "id": "V3B14",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Is it alright to pop this in the microwave to warm up some soup?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "Microwave safety in colloquial frame; shares only the word microwave with the chunk.",
+   "target_overlap": 1,
+   "target_overlap_words": [
+    "microwave"
+   ],
+   "got_behavior": "answer",
+   "score": -2.536,
+   "sources": [
+    "product.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+   "raw_sources": [
+    "product.html"
+   ],
+   "facts_found": [
+    "microwave safe"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+   "latency_ms": 454.1,
+   "service_s": 0.454,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 2,
+    "probs": {
+     "7": 0.02,
+     "6": 0.94
+    },
+    "selected": [
+     "6"
+    ],
+    "noul_max": 0.94,
+    "calls": 1,
+    "input_tokens": 648,
+    "output_tokens": 40
+   },
+   "pool": {
+    "size": 2,
+    "ids": [
+     "7",
+     "6"
+    ],
+    "bm25_ids": [
+     "7",
+     "6"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [
+     "6"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.4,
+    "jev": 453.8
+   }
+  },
+  {
+   "id": "V3B15",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Will mine be precisely the same size as the one in the photos?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "vary by up to 5 mm"
+   ],
+   "note": "Height variation via same size/photos; no height/vary vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "answer",
+   "score": -2.612,
+   "sources": [
+    "index.html"
+   ],
+   "source_ok": false,
+   "raw_answer_text": "Momo Ceramics — handmade mugs Home · Aurora Mug · Shipping · Returns · FAQ Momo Ceramics — handmade mugs Momo Ceramics is a small independent studio in Kyoto making handmade stoneware mugs in small batches. Every mug is thrown, glazed and fired by hand, so small variations in color and size are part of the craft. Our best seller is the Aurora Mug.",
+   "raw_sources": [
+    "index.html"
+   ],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "Momo Ceramics — handmade mugs Home · Aurora Mug · Shipping · Returns · FAQ Momo Ceramics — handmade mugs Momo Ceramics is a small independent studio in Kyoto making handmade stoneware mugs in small batches. Every mug is thrown, glazed and fired by hand, so small variations in color and size are part of the craft. Our best seller is the Aurora Mug.",
+   "latency_ms": 296.7,
+   "service_s": 0.297,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 4,
+    "probs": {
+     "4": 0.05,
+     "9": 0.03,
+     "0": 0.95,
+     "8": 0.07
+    },
+    "selected": [
+     "0"
+    ],
+    "noul_max": 0.95,
+    "calls": 1,
+    "input_tokens": 1096,
+    "output_tokens": 76
+   },
+   "pool": {
+    "size": 4,
+    "ids": [
+     "4",
+     "9",
+     "0",
+     "8"
+    ],
+    "bm25_ids": [
+     "4",
+     "9",
+     "0",
+     "8"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "7"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 296.4
+   }
+  },
+  {
+   "id": "V3B16",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "Once it's on its way, how will I be able to follow where it is?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "tracking number is emailed"
+   ],
+   "note": "Tracking asked via follow where it is; no tracking vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": -2.612,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 412.1,
+   "service_s": 0.412,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 3,
+    "probs": {
+     "4": 0.04,
+     "8": 0.04,
+     "9": 0.02
+    },
+    "selected": [],
+    "noul_max": 0.04,
+    "calls": 1,
+    "input_tokens": 886,
+    "output_tokens": 58
+   },
+   "pool": {
+    "size": 3,
+    "ids": [
+     "4",
+     "8",
+     "9"
+    ],
+    "bm25_ids": [
+     "4",
+     "8",
+     "9"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "3"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 411.8
+   }
+  },
+  {
+   "id": "V3B17",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What's it crafted from — porcelain or something else?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "stoneware"
+   ],
+   "note": "Material asked via crafted/porcelain; no material/stoneware vocabulary.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.5,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "0",
+     "6"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.5,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3B18",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "What colour does it come in?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "midnight-blue"
+   ],
+   "note": "Glaze colour asked with British spelling; chunk uses midnight-blue/color-free wording.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.3,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3B19",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "If it turns up broken, do I get to choose between a fresh one or my money back?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "replacement or a full refund",
+    "whichever you prefer"
+   ],
+   "note": "Damaged-item choice via broken/fresh/money back; no damaged/replacement content words in the question itself.",
+   "target_overlap": 0,
+   "target_overlap_words": [],
+   "got_behavior": "answer",
+   "score": -5.072,
+   "sources": [
+    "returns.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+   "raw_sources": [
+    "returns.html"
+   ],
+   "facts_found": [
+    "replacement or a full refund",
+    "whichever you prefer"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "Returns and refunds policy Home · Aurora Mug · Shipping · Returns · FAQ Returns and refunds policy You can return unused items within 30 days of delivery for a full refund. Items must be unused and in their original packaging. If your mug arrives damaged, send us a photo within 7 days of delivery and we will send a replacement or a full refund, whichever you prefer. For regular returns the customer pays return shipping. For damaged items we cover all costs. Refunds are issued to the original payment method within 5 business days after we receive the item.",
+   "latency_ms": 340.8,
+   "service_s": 0.341,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 4,
+    "probs": {
+     "7": 0.03,
+     "4": 0.98,
+     "9": 0.04,
+     "5": 0.84
+    },
+    "selected": [
+     "4",
+     "5"
+    ],
+    "noul_max": 0.98,
+    "calls": 1,
+    "input_tokens": 994,
+    "output_tokens": 76
+   },
+   "pool": {
+    "size": 4,
+    "ids": [
+     "7",
+     "4",
+     "9",
+     "5"
+    ],
+    "bm25_ids": [
+     "7",
+     "4",
+     "9",
+     "5"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "4"
+    ],
+    "gold_in_pool": [
+     "4"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.6,
+    "jev": 340.2
+   }
+  },
+  {
+   "id": "V3B20",
+   "group": "paraphrase2",
+   "lang": "en",
+   "question": "My friend lives in Kyoto — how quickly would a mug get to her?",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 4 business days"
+   ],
+   "note": "Japan delivery time via Kyoto/friend; shares only the nav word mug with the chunk.",
+   "target_overlap": 1,
+   "target_overlap_words": [
+    "mug"
+   ],
+   "got_behavior": "answer",
+   "score": -1.647,
+   "sources": [
+    "shipping.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+   "raw_sources": [
+    "shipping.html"
+   ],
+   "facts_found": [
+    "2 to 4 business days"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "Shipping and delivery Home · Aurora Mug · Shipping · Returns · FAQ Shipping and delivery Orders are processed in 2 to 3 business days. We ship to Japan, the United States, Canada and the European Union. Delivery takes 2 to 4 business days within Japan and 5 to 10 business days for the United States, Canada and the European Union.",
+   "latency_ms": 337.2,
+   "service_s": 0.337,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 6,
+    "probs": {
+     "0": 0.65,
+     "9": 0.04,
+     "8": 0.07,
+     "6": 0.27,
+     "4": 0.07,
+     "2": 0.98
+    },
+    "selected": [
+     "2"
+    ],
+    "noul_max": 0.98,
+    "calls": 1,
+    "input_tokens": 1524,
+    "output_tokens": 112
+   },
+   "pool": {
+    "size": 6,
+    "ids": [
+     "0",
+     "9",
+     "8",
+     "6",
+     "4",
+     "2"
+    ],
+    "bm25_ids": [
+     "0",
+     "9",
+     "8",
+     "6",
+     "4",
+     "2"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "2"
+    ],
+    "gold_in_pool": [
+     "2"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.3,
+    "jev": 336.9
+   }
+  },
+  {
+   "id": "V3Z01",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "我想把没用过的杯子退回去，能在收到货之后多少天内退？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "note": "中文直问：退货期限。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "4"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z02",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "如果收货地址在美国，大概要等多久才能收到？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "5 to 10 business days"
+   ],
+   "note": "中文直问：美国配送时长。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "2"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z03",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "这个杯子能装多少毫升水？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "350 ml"
+   ],
+   "note": "中文直问：容量。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z04",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "一个 Aurora 杯子卖多少钱？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38 US dollars"
+   ],
+   "note": "中文直问：价格（题面含拉丁词 Aurora，control 可能因此有候选，如实记录）。",
+   "got_behavior": "answer",
+   "score": -0.0,
+   "sources": [
+    "product.html"
+   ],
+   "source_ok": true,
+   "raw_answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+   "raw_sources": [
+    "product.html"
+   ],
+   "facts_found": [
+    "38 US dollars"
+   ],
+   "facts_ratio": 1.0,
+   "answer_text": "Aurora Mug — product details Home · Aurora Mug · Shipping · Returns · FAQ Aurora Mug — product details The Aurora Mug is a handmade stoneware mug with a matte midnight-blue glaze. Capacity is 350 ml. Price is 38 US dollars. The mug is microwave safe and dishwasher safe, though hand washing is recommended to keep the glaze finish. Each piece is made to order in small batches.",
+   "latency_ms": 347.7,
+   "service_s": 0.348,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 5,
+    "probs": {
+     "6": 0.98,
+     "0": 0.11,
+     "2": 0.07,
+     "4": 0.07,
+     "8": 0.06
+    },
+    "selected": [
+     "6"
+    ],
+    "noul_max": 0.98,
+    "calls": 1,
+    "input_tokens": 1343,
+    "output_tokens": 94
+   },
+   "pool": {
+    "size": 5,
+    "ids": [
+     "6",
+     "0",
+     "2",
+     "4",
+     "8"
+    ],
+    "bm25_ids": [
+     "6",
+     "0",
+     "2",
+     "4",
+     "8"
+    ],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [
+     "6"
+    ],
+    "pool_recall": 1.0,
+    "any_gold_in_pool": true,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.2,
+    "jev": 347.4
+   }
+  },
+  {
+   "id": "V3Z05",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "杯子可以放进微波炉里加热吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "中文直问：微波炉安全性。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z06",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "买来送朋友，能帮我包得漂亮一点吗？这个服务收费吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free"
+   ],
+   "note": "中文改写：礼品包装是否收费，不用页面原词。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "8"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z07",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "能不能按照我的要求单独做一个特别款？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "do not accept custom orders"
+   ],
+   "note": "中文改写：定制（与 G05 的刻名问法不同）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "8"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z08",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "发邮件咨询的话，一般多久能收到回复？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "one business day"
+   ],
+   "note": "中文直问：邮件回复时限。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "9"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z09",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "订单满多少钱可以免运费？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "80 US dollars",
+    "free"
+   ],
+   "note": "中文直问：免邮门槛。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "3",
+     "8"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z10",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "吃完饭直接把杯子扔进洗碗机里洗，没问题吧？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html",
+    "faq.html"
+   ],
+   "expected_facts": [
+    "dishwasher safe"
+   ],
+   "note": "中文改写：洗碗机清洗（与 G03 问法不同）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6",
+     "9"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z11",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "收到时杯子已经碎了，我要在几天内拍照告诉你们？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "7 days",
+    "photo"
+   ],
+   "note": "中文直问：破损拍照期限。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "4"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z12",
+   "group": "zh2",
+   "lang": "zh",
+   "question": "这些杯子是纯手工制作的吗？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "index.html",
+    "product.html"
+   ],
+   "expected_facts": [
+    "handmade"
+   ],
+   "note": "中文直问：是否手工。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "0",
+     "6",
+     "7"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z13",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "杯子用了一年开裂了，在保修期内吗？能免费换吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有任何保修条款（同 v1 D04 的缺失点，中文版）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 1.0,
+   "service_s": 0.001,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 1.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z14",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "这个杯子本身有多重？多少克？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有写重量（同 v1 D02 的缺失点，中文版）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z15",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "我急用，明天能送到吗？有没有次日达？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面没有次日达/加急（同 v1 D01 的缺失点，中文版）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z16",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "near_miss",
+   "question": "能不能单独买一张你们家的礼品卡送人？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [],
+   "note": "中文近似陷阱：页面只写包装时附空白礼品卡，不售礼品卡（同 v1 D07 的缺失点，中文版）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z17",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "结账的时候可以用支付宝付款吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：页面没写任何支付方式，更没支付宝。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z18",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "unanswerable",
+   "question": "在你们店下单能攒积分吗？积分能换优惠吗？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "中文无答案：页面没有积分计划（同 v1 E02 的缺失点，中文版）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z19",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "帮我把我刚下的那笔订单取消掉，谢谢。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界：取消订单是执行请求，应转人工；页面也没有取消流程。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3Z20",
+   "group": "zh2",
+   "lang": "zh",
+   "subtype": "handoff",
+   "question": "我的包裹现在到哪儿了？帮我查一下位置。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "中文动作边界：查实时物流是执行请求；页面只写追踪号会邮件发送，没有实时位置查询。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J01",
+   "group": "ja",
+   "lang": "ja",
+   "question": "未使用の場合、届いてから何日以内なら返品できますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [
+    "30 days",
+    "unused"
+   ],
+   "note": "日文直问：退货期限。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "4"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J02",
+   "group": "ja",
+   "lang": "ja",
+   "question": "日本国内だと、届くまで何日くらいかかりますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "2 to 4 business days"
+   ],
+   "note": "日文直问：日本国内配送时长。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "2"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J03",
+   "group": "ja",
+   "lang": "ja",
+   "question": "このマグカップはいくらですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "38 US dollars"
+   ],
+   "note": "日文直问：价格。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J04",
+   "group": "ja",
+   "lang": "ja",
+   "question": "電子レンジで温めても大丈夫ですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "product.html"
+   ],
+   "expected_facts": [
+    "microwave safe"
+   ],
+   "note": "日文直问：微波炉安全性。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "6"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J05",
+   "group": "ja",
+   "lang": "ja",
+   "question": "プレゼント用にラッピングしてもらえますか？追加料金はかかりますか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "faq.html"
+   ],
+   "expected_facts": [
+    "gift wrapping is free"
+   ],
+   "note": "日文直问：礼品包装与收费。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "8"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J06",
+   "group": "ja",
+   "lang": "ja",
+   "question": "送料が無料になるのは、合計いくら以上買ったときですか？",
+   "expected_behavior": "answer",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [
+    "80 US dollars",
+    "free"
+   ],
+   "note": "日文直问：免邮门槛。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "miss",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [
+     "3",
+     "8"
+    ],
+    "gold_in_pool": [],
+    "pool_recall": 0.0,
+    "any_gold_in_pool": false,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J07",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "1年使ってひびが入ったら、保証で交換してもらえますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近似陷阱：页面没有任何保修条款（同 v1 D04 的缺失点，日文版）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J08",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "near_miss",
+   "question": "翌日配送はありますか？明日までに届けてほしいです。",
+   "expected_behavior": "fallback",
+   "expected_sources": [
+    "shipping.html"
+   ],
+   "expected_facts": [],
+   "note": "日文近似陷阱：页面没有次日达（同 v1 D01 的缺失点，日文版）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J09",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "unanswerable",
+   "question": "支払いはコンビニ払いでもできますか？",
+   "expected_behavior": "fallback",
+   "expected_sources": [],
+   "expected_facts": [],
+   "note": "日文无答案：页面没写任何支付方式。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.0,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.0,
+    "jev": 0.0
+   }
+  },
+  {
+   "id": "V3J10",
+   "group": "ja",
+   "lang": "ja",
+   "subtype": "handoff",
+   "question": "注文番号3311をキャンセルして、今すぐ返金してください。",
+   "expected_behavior": "handoff",
+   "expected_sources": [
+    "returns.html"
+   ],
+   "expected_facts": [],
+   "note": "日文动作边界：取消+立即退款是执行请求，应转人工（订单号与 v1 F01 不同）。",
+   "got_behavior": "fallback",
+   "score": 0.0,
+   "sources": [],
+   "source_ok": false,
+   "raw_answer_text": "",
+   "raw_sources": [],
+   "facts_found": [],
+   "facts_ratio": 0.0,
+   "answer_text": "",
+   "latency_ms": 0.2,
+   "service_s": 0.0,
+   "verdict": "hit",
+   "jev": {
+    "n_candidates": 0,
+    "probs": {},
+    "selected": [],
+    "noul_max": null,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "pool": {
+    "size": 0,
+    "ids": [],
+    "bm25_ids": [],
+    "dense_top_ids": [],
+    "gold_ids": [],
+    "gold_in_pool": [],
+    "pool_recall": null,
+    "any_gold_in_pool": null,
+    "cosines": {}
+   },
+   "latency_split_ms": {
+    "embedding": 0.0,
+    "bm25": 0.2,
+    "jev": 0.0
+   }
+  }
+ ]
+}
